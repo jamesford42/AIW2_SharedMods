@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+    <item
+            name="NecromancerEmpireFactionDeepInfo"
+            is_partial_record="true"
+            dll_name="NecroParty"
+            type_name="NecroParty.Np_NecromancerEmpireFactionDeepInfo"
+            />
+    <item
+            name="NecromancerSidekickFactionDeepInfo"
+            is_partial_record="true"
+            dll_name="NecroParty"
+            type_name="NecroParty.Np_NecromancerEmpireFactionDeepInfo"
+            />
+
+</root>

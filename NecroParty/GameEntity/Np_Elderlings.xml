@@ -1,0 +1,1731 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+<!-- 
+	<entity	name="ElderlingEgg"
+			thematic_groups="Neinzul,Elderling"
+			npc_ship_cap_type="SpecialThingsToAlwaysSeed"
+			tags="ElderlingEgg,EssenceGranter"
+			draw_in_galaxy_view="true"
+			visuals="Assets/_DLC3/Elderlings/ElderlingEgg/NeinzulElderlingEgg.prefab"
+			visuals_bundle="exp3_neinzul_abyss"
+			icon_name="Ships4/ElderlingEgg"
+			gimbal_icon_size_multiplier="1.5"
+			y_offset_of_icon="30"
+			voice_group="Silent"
+			category="Ship"
+			visuals_scale_multiplier="70"
+			lod_distance_multiplier="1.4"
+			y_offset_of_ship_in_visual_space="0"
+			size_scale="6"
+			collision_priority="810"
+			display_name="Elderling Egg"
+			display_name_for_sidebar="E Egg"
+			description="This is an egg from the Neinzul Elderlings. It will soon hatch into an adult Elderling. Adult Elderlings will grant more resources when killed, and usually even more resources at higher mark levels."
+			behavior="Stationary"
+			metal_to_grant_on_death="30000"
+			starting_mark_level="Markless"
+			cost_for_ai_to_purchase="500"
+			grants_minor_faction_planet_control="true"
+			hull_points="1500000"
+			shield_points="3000000"
+			speed="Immobile"
+			metal_cost="500"
+			energy_consumption="15000"
+			moonstone_cost="0"
+			bloodstone_cost="0"
+			armor_mm="90"
+			albedo="0.6"
+			mass_tx="6"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			target_type_for_player="NeverAutotargetButAllowManualTarget"
+			should_never_count_as_threat="true"
+			priority_as_ai_target="IrreplaceableMisc"
+			priority_as_frd_target="NotDangerous"
+			priority_to_protect="Irreplaceable"
+			description_appender_dll="AIWarExternalCode"
+			description_appender_type="Arcen.AIW2.External.ElderlingsDescriptionAppender"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_one_to_grant_on_death="1"
+				immune_to_necromancy="true"
+				/>
+
+	</entity>
+
+	<entity
+			copy_from="MinorFactionBeacon"
+			name="ElderlingsBeacon"
+			tags="Beacon,ElderlingsBeacon"
+			is_expecting_to_not_be_encyclopedia_counted_at_all="true"
+			thematic_groups="Beacon"
+			icon_overlay="Overlays2/Race_Neinzul"
+			display_name="Elderlings Beacon"
+			display_name_for_sidebar="Elderlings BEAC"
+			description="An incursion of Neinzul Elderlings has come into the galaxy. Each Elderling will defend a territory of the map, and reproduce slowly. Eventually more and more Elderlings will patrol the galaxy.
+
+Killing Elderlings will grant Science.
+
+&lt;color=#f25e1c&gt;HIGH IMPACT:&lt;/color&gt; If the Elderlings are not culled regularly, then they can make it very hard to move around the galaxy."
+			target_type_for_player="NeverTarget"
+			>
+	</entity>
+
+	<entity
+			name="FeebleElderling"
+			copy_from="SlothfulElderling"
+			tags="LowestElderling,Elderling,EssenceGranter"
+			display_name="Feeble Elderling"
+			icon_name="Ships4/ElderlingLow"
+			icon_overlay="Overlays2/NecromancerFlagship_Base"
+			display_name_for_sidebar="Feeble E"
+			visuals="Assets/_DLC3/Elderlings/FeebleElderling/FeebleElderling.prefab"
+			visuals_bundle="exp3_neinzul_abyss"
+			size_scale="15"
+			visuals_scale_multiplier="80"
+			y_offset_of_ship_in_visual_space="50"
+			hull_points="140000"
+			shield_points="700000"
+			speed="BelowAverage2"
+			description="This particularly weak Elderling should be easy prey for the Necromancer. Contains much more essence compared to its brethren, especially when allowed to gain additional marks."
+			should_never_count_as_threat="true"
+			eligible_for_hacks="TrackElderling"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="AIWarExternalCode"
+				necromancer_resource_granter_type="Arcen.AIW2.External.ElderlingResourceGranter"
+				name_for_elderling_transformation="∅"
+				immune_to_necromancy="true"
+				/>
+		<system
+				name="V1"
+				range="Normal3"
+				max_mark_level_to_function="0"
+				/>
+		<system
+				name="V2"
+				display_name="Feeble Petard"
+				category="Weapon"
+				firing_timing="OnlyInRange"
+				damage_per_shot="2000"
+				range="Normal1"
+				shot_speed="Normal"
+				rate_of_fire="Normal"
+				shots_per_salvo="10"
+				fires_salvos_sequentially="false"
+				shot_type_data="PikeShot_Gold"
+				>
+		</system>
+	</entity>
+
+	<entity
+			name="SlothfulElderling"
+			thematic_groups="Neinzul,Elderling"
+			display_name="Slothful Elderling"
+			display_name_for_sidebar="Slothful E"
+			tags="LowElderling,Elderling,EssenceGranter"
+			visuals="Assets/_DLC3/Elderlings/SlothfulElderling/SlothfulElderling.prefab"
+			visuals_bundle="exp3_neinzul_abyss"
+			icon_name="Ships4/ElderlingLow"
+			icon_overlay="Overlays2/NecromancerFlagship_Slothful"
+			gimbal_icon_size_multiplier="1.0"
+			uses_large_health_bar="true"
+			category="Ship"
+			size_scale="15"
+			visuals_scale_multiplier="180"
+			y_offset_of_ship_in_visual_space="150"
+			draw_in_galaxy_view="true"
+			collision_priority="200"
+			y_offset_of_icon="140"
+			description="This weak Elderling patrols the galaxy. Prone to indolence, this Elderling resents nimbleness and attacks in short bursts at long range, excelling at taking down ships that have powerful engines or move quickly."
+			voice_group="Silent"
+			starting_mark_level="Mark1"
+			tech_upgrades_that_benefit_me="Unused"
+			cost_for_ai_to_purchase="5500"
+			strength_multiplier="1"
+			mark_level_scale_style="Elderlings"
+			hull_points="1500000"
+			shield_points="500000"
+			speed="BelowAverage2"
+			metal_cost="800000"
+			energy_consumption="25000"
+			armor_mm="180"
+			albedo="0.7"
+			engine_gx="16"
+			mass_tx="7"
+			science_to_grant_on_death="25"
+			ship_or_structure_explosion_sfx="ShipGuardian_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			priority_as_ai_target="BigThreateningWeapon"
+			priority_as_frd_target="BigThreateningWeapon"
+			priority_to_protect="BigFavoriteToy"
+			description_appender_dll="AIWarExternalCode"
+			description_appender_type="Arcen.AIW2.External.ElderlingsDescriptionAppender"
+			eligible_for_hacks="TransformElderling,SummonTranscendantElderling,TrackElderling"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="AIWarExternalCode"
+				necromancer_resource_granter_type="Arcen.AIW2.External.ElderlingResourceGranter"
+				immune_to_necromancy="true"
+				name_for_elderling_transformation="HackedSlothfulElderling"
+				/>
+
+		<system
+				name="V1"
+				display_name="Slothic Salvo"
+				category="Weapon"
+				firing_timing="OnlyInRange"
+				damage_per_shot="1000"
+				range="High2"
+				shot_speed="Normal"
+				rate_of_fire="Devourer"
+				fires_salvos_sequentially="false"
+				shot_type_data="EngineDisruptingShell"
+				shots_per_salvo="30"
+				added_shots_per_salvo_per_mark="5"
+				use_alternate_rate_of_fire_after_x_shots="10"
+				alternate_rate_of_fire="Sloth"
+				use_alternate_rate_of_fire_for_x_shots_before_reverting="1"
+				>
+			<outgoing_damage_modifier
+					based_on="engine_gx"
+					comparison_type="AtLeast"
+					compared_to="14"
+					multiplier="5"
+					/>
+			<outgoing_damage_modifier
+					based_on="CurrentSpeedIfMoving"
+					comparison_type="MultiplesOf"
+					compared_to="200"
+					multiplier="1"
+					max_multiplier="10"
+					/>
+		</system>
+	</entity>
+
+	<entity
+			name="HackedSlothfulElderling"
+			copy_from="SlothfulElderling"
+			display_name="Sacrificial Slothful Elderling"
+			display_name_for_sidebar="Slothful E"
+			tags="Elderling,HackedElderling"
+			icon_overlay="Overlays2/SkeletonLord"
+			description="This Slothful Elderling has been transformed. If it is killed by the Necromancer it will allow their flagships to transform into a more powerful one based on the Elderling's trait but will not grant essence."
+			speed="AboveAverage2"
+			eligible_for_hacks="SummonTranscendantElderling,TrackElderling"
+			starting_mark_level="Mark7"
+			aip_on_death="5"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="∅"
+				necromancer_resource_granter_type="∅"
+				necromancer_upgrade_to_grant_on_death="ClaimSlothfulFlagship"
+				name_for_elderling_transformation="∅"
+				immune_to_necromancy="true"
+				/>
+	</entity>
+
+	<entity
+			name="CyclopeanElderling"
+			thematic_groups="Neinzul,Elderling"
+			display_name="Cyclopean Elderling"
+			display_name_for_sidebar="Cyclopean E"
+			tags="LowElderling,Elderling,EssenceGranter"
+			draw_in_galaxy_view="true"
+			starting_mark_level="Mark1"
+			tech_upgrades_that_benefit_me="Unused"
+			description="This low tier Elderling patrols the galaxy. Fires a fusion coil beam that bypasses most personal shielding, hitting all intersecting ships. Surprisingly tanky."
+			visuals="Assets/_DLC3/Elderlings/CyclopeanElderling/CyclopeanElderling.prefab"
+			visuals_bundle="exp3_neinzul_abyss"
+			icon_name="Ships4/ElderlingLow"
+			icon_overlay="Overlays2/NecromancerFlagship_Cyclopean"
+			gimbal_icon_size_multiplier="1.25"
+			voice_group="Saboteur"
+			category="Ship"
+			size_scale="15"
+			visuals_scale_multiplier="90"
+			collision_priority="200"
+			y_offset_of_icon="140"
+			uses_large_health_bar="true"
+			cost_for_ai_to_purchase="5500"
+			strength_multiplier="1"
+			mark_level_scale_style="Elderlings"
+			hull_points="2000000"
+			shield_points="500000"
+			speed="Normal2"
+			metal_cost="500000"
+			energy_consumption="45000"
+			armor_mm="280"
+			engine_gx="16"
+			albedo="0.7"
+			mass_tx="7"
+			science_to_grant_on_death="25"
+			ship_or_structure_explosion_sfx="ShipStarship_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			priority_as_ai_target="NormalStarship"
+			priority_as_frd_target="NormalStarship"
+			priority_to_protect="SlightlyLessExpendable"
+			description_appender_dll="AIWarExternalCode"
+			description_appender_type="Arcen.AIW2.External.ElderlingsDescriptionAppender"
+			eligible_for_hacks="SummonTranscendantElderling,TrackElderling,TransformElderling"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="AIWarExternalCode"
+				necromancer_resource_granter_type="Arcen.AIW2.External.ElderlingResourceGranter"
+				name_for_elderling_transformation="HackedCyclopeanElderling"
+				immune_to_necromancy="true"
+				/>
+
+		<system
+				name="R9"
+				display_name="Cyclopean Beam"
+				category="Weapon"
+				firing_timing="OnlyInRange"
+				damage_per_shot="16000"
+				range="AboveAverage4"
+				shot_speed="Normal"
+				rate_of_fire="Normal"
+				shot_type_data="HeavyBeamInvisible"
+				beam_length_multiplier="1.3"
+				beam_weapon_visual_style="Laser_PurpleBright"
+				hits_all_intersecting_targets="true"
+				shots_detonate_immediately="true"
+				is_coilbeam="true"
+				base_percent_damage_bypasses_personal_shields="0.65"
+				>
+		</system>
+		<ship_class_data can_be_zombified_and_similar="false" />
+	</entity>
+
+	<entity
+			name="HackedCyclopeanElderling"
+			copy_from="CyclopeanElderling"
+			display_name="Sacrificial Cyclopean Elderling"
+			display_name_for_sidebar="Cyclopean E"
+			tags="Elderling,HackedElderling"
+			icon_overlay="Overlays2/SkeletonLord"
+			description="This Cyclopean Elderling has been transformed. If it is killed by the Necromancer it will allow their flagships to transform into a more powerful one based on the Elderling's trait but will not grant essence."
+			speed="AboveAverage2"
+			eligible_for_hacks="SummonTranscendantElderling,TrackElderling"
+			starting_mark_level="Mark7"
+			aip_on_death="5"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="∅"
+				necromancer_resource_granter_type="∅"
+				necromancer_upgrade_to_grant_on_death="ClaimCyclopeanFlagship"
+				name_for_elderling_transformation="∅"
+				immune_to_necromancy="true"
+				/>
+	</entity>
+
+	<entity
+			name="WrathfulElderling"
+			copy_from="SlothfulElderling"
+			display_name="Wrathful Elderling"
+			display_name_for_sidebar="Wrathful E"
+			visuals="Assets/_DLC3/Elderlings/WrathfulElderling/WrathfulElderling.prefab"
+			visuals_bundle="exp3_neinzul_abyss"
+			size_scale="25"
+			visuals_scale_multiplier="180"
+			y_offset_of_ship_in_visual_space="150"
+			tags="LowElderling,Elderling,EssenceGranter"
+			icon_name="Ships4/ElderlingLow"
+			icon_overlay="Overlays2/NecromancerFlagship_Wrathful"
+			gimbal_icon_size_multiplier="1.1"
+			draw_in_galaxy_view="true"
+			starting_mark_level="Mark1"
+			tech_upgrades_that_benefit_me="Unused"
+			strength_multiplier="1"
+			science_to_grant_on_death="25"
+			description="This weak Elderling patrols the galaxy. Gains strength as it or its adversary takes damage."
+			hull_points="1000000"
+			shield_points="1000000"
+			description_appender_dll="AIWarExternalCode"
+			description_appender_type="Arcen.AIW2.External.ElderlingsDescriptionAppender"
+			eligible_for_hacks="SummonTranscendantElderling,TrackElderling,TransformElderling"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="AIWarExternalCode"
+				necromancer_resource_granter_type="Arcen.AIW2.External.ElderlingResourceGranter"
+				name_for_elderling_transformation="HackedWrathfulElderling"
+				immune_to_necromancy="true"
+				/>
+		<system
+				name="V1"
+				range="AboveAverage1"
+				max_mark_level_to_function="0"
+				/>
+		<system
+				name="R9"
+				display_name="Wrathful Barrage"
+				category="Weapon"
+				firing_timing="OnlyInRange"
+				damage_per_shot="1500"
+				range="AboveAverage1"
+				shot_speed="VeryFast"
+				rate_of_fire="Misery"
+				shots_per_salvo="10"
+				shots_per_target="5"
+				fires_salvos_sequentially="false"
+				shot_type_data="EnergyWave"
+				>
+			<outgoing_damage_modifier
+					based_on="MyHullPercentageMissing"
+					comparison_type="MultiplesOf"
+					compared_to="20"
+					multiplier="1"
+					/>
+			<outgoing_damage_modifier
+					based_on="TargetHullPercentageMissing"
+					comparison_type="MultiplesOf"
+					compared_to="20"
+					multiplier="1"
+					/>
+		</system>
+	</entity>
+
+	<entity
+			name="HackedWrathfulElderling"
+			copy_from="WrathfulElderling"
+			tags="Elderling,HackedElderling"
+			icon_overlay="Overlays2/SkeletonLord"
+			display_name="Sacrificial Wrathful Elderling"
+			display_name_for_sidebar="Wrathful E"
+			description="This Wrathful Elderling has been transformed. If it is killed by the Necromancer it will allow their flagships to transform into a more powerful one based on the Elderling's trait but will not grant essence."
+			speed="AboveAverage2"
+			eligible_for_hacks="SummonTranscendantElderling,TrackElderling"
+			starting_mark_level="Mark7"
+			aip_on_death="5"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="∅"
+				necromancer_resource_granter_type="∅"
+				necromancer_upgrade_to_grant_on_death="ClaimWrathfulFlagship"
+				name_for_elderling_transformation="∅"
+				immune_to_necromancy="true"
+				/>
+	</entity>
+
+	<entity
+			name="DecadentElderling"
+			thematic_groups="Neinzul,Elderling"
+			display_name="Decadent Elderling"
+			display_name_for_sidebar="Decadent E"
+			tags="MedElderling,Elderling,EssenceGranter"
+			visuals="Assets/_DLC3/Elderlings/DecadentElderling/DecadentElderling.prefab"
+			visuals_bundle="exp3_neinzul_abyss"
+			icon_name="Ships4/ElderlingMedium"
+			icon_overlay="Overlays2/NecromancerFlagship_Decadent"
+			gimbal_icon_size_multiplier="1.5"
+			draw_in_galaxy_view="true"
+			uses_large_health_bar="true"
+			category="Ship"
+			size_scale="25"
+			visuals_scale_multiplier="150"
+			collision_priority="600"
+			y_offset_of_icon="140"
+			starting_mark_level="Mark1"
+			tech_upgrades_that_benefit_me="Unused"
+			cost_for_ai_to_purchase="10500"
+			strength_multiplier="1"
+			mark_level_scale_style="Elderlings"
+			hull_points="6000000"
+			shield_points="3000000"
+			speed="BelowAverage1"
+			metal_cost="800000"
+			energy_consumption="45000"
+			armor_mm="180"
+			albedo="0.7"
+			engine_gx="22"
+			mass_tx="7"
+			description="This medium Elderling patrols the galaxy. It reels ships towards itself so it can devour them, replenishing health in the process."
+			description_appender_dll="AIWarExternalCode"
+			description_appender_type="Arcen.AIW2.External.ElderlingsDescriptionAppender"
+			eligible_for_hacks="SummonTranscendantElderling,TrackElderling,TransformElderling"
+			science_to_grant_on_death="50"
+			ship_or_structure_explosion_sfx="ShipGuardian_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			voice_group="Silent"
+			priority_as_ai_target="BigThreateningWeapon"
+			priority_as_frd_target="BigThreateningWeapon"
+			priority_to_protect="BigFavoriteToy"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="AIWarExternalCode"
+				necromancer_resource_granter_type="Arcen.AIW2.External.ElderlingResourceGranter"
+				immune_to_necromancy="true"
+				name_for_elderling_transformation="HackedDecadentElderling"
+				/>
+
+		<system
+				name="WT"
+				display_name="Decadent Fishing Hooks"
+				category="Weapon"
+				firing_timing="OnlyInRange"
+				damage_per_shot="2000"
+				range="AboveAverage4"
+				shot_speed="Normal"
+				rate_of_fire="Low"
+				shots_per_salvo="50"
+				fires_salvos_sequentially="false"
+				base_engine_stun_per_shot="16"
+				added_engine_stun_per_shot_per_mark="4"
+				engine_stun_to_engine_gx_less_than="14"
+				max_engine_stun_seconds="40"
+				added_target_evaluator="EngineDamageAsMajorPrimary"
+				base_knockback_per_shot="-3000"
+				added_knockback_per_shot_per_mark="-1000"
+				knockback_to_ships_mass_tx_less_than="5.5"
+				shot_type_data="HeavyBeamInvisible"
+				beam_length_multiplier="1"
+				beam_weapon_visual_style="Laser_PurpleBright"
+				>
+		</system>
+		<system
+				name="WJ"
+				display_name="Devour"
+				category="Weapon"
+				firing_timing="OnlyInRange"
+				damage_per_shot="1000"
+				range="Small5"
+				shot_speed="Normal"
+				rate_of_fire="VeryLow"
+				fires_salvos_sequentially="true"
+				shots_per_salvo="10"
+				shot_type_data="MeleeInvisible"
+				health_change_by_max_health_divided_by_this_per_attack="40"
+				can_devour="true"
+				devour_mass_lower_than="5.1"
+				only_targets_mobile_units="true"
+				>
+		</system>
+	</entity>
+
+	<entity
+			name="HackedDecadentElderling"
+			copy_from="DecadentElderling"
+			tags="Elderling,HackedElderling"
+			icon_overlay="Overlays2/SkeletonLord"
+			display_name="Sacrificial Decadent Elderling"
+			display_name_for_sidebar="Decadent E"
+			description="This Decadent Elderling has been transformed. If it is killed by the Necromancer it will allow their flagships to transform into a more powerful one based on the Elderling's trait but will not grant essence."
+			speed="AboveAverage2"
+			eligible_for_hacks="SummonTranscendantElderling,TrackElderling"
+			starting_mark_level="Mark7"
+			aip_on_death="10"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="∅"
+				necromancer_resource_granter_type="∅"
+				necromancer_upgrade_to_grant_on_death="ClaimDecadentFlagship"
+				name_for_elderling_transformation="∅"
+				immune_to_necromancy="true"
+				/>
+	</entity>
+
+	<entity
+			name="AccursedElderling"
+			thematic_groups="Neinzul,Elderling"
+			display_name="Accursed Elderling"
+			display_name_for_sidebar="Accursed E"
+			tags="MedElderling,Elderling,EssenceGranter"
+			visuals="Assets/_DLC3/Elderlings/AccursedElderling/AccursedElderling.prefab"
+			visuals_bundle="exp3_neinzul_abyss"
+			icon_name="Ships4/ElderlingMedium"
+			icon_overlay="Overlays2/NecromancerFlagship_Accursed"
+			gimbal_icon_size_multiplier="1.25"
+			voice_group="Starship"
+			category="Ship"
+			size_scale="25"
+			visuals_scale_multiplier="180"
+			collision_priority="600"
+			y_offset_of_icon="140"
+			uses_large_health_bar="true"
+			description="This medium Elderling patrols the galaxy. Weaker than similar-sized Elderlings, but causes its enemies to take damage whenever they fire upon it. Its primary weapon deals massive damage to a single target, bypassing any personal shielding."
+			assist_range="Normal5"
+			starting_mark_level="Mark1"
+			tech_upgrades_that_benefit_me="Unused"
+			cost_for_ai_to_purchase="10500"
+			mark_level_scale_style="Elderlings"
+			hull_points="3000000"
+			shield_points="4000000"
+			speed="BelowAverage1"
+			metal_cost="500000"
+			energy_consumption="45000"
+			armor_mm="120"
+			engine_gx="16"
+			albedo="0.7"
+			mass_tx="7"
+			returns_this_percentage_of_damage_if_damaged_by_enemy_attack="0.15"
+			ship_or_structure_explosion_sfx="ShipStarship_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			absolute_max_cap_when_in_fleets="1"
+			priority_as_ai_target="NormalStarship"
+			priority_as_frd_target="NormalStarship"
+			priority_to_protect="SlightlyLessExpendable"
+			draw_in_galaxy_view="true"
+			description_appender_dll="AIWarExternalCode"
+			description_appender_type="Arcen.AIW2.External.ElderlingsDescriptionAppender"
+			science_to_grant_on_death="50"
+			eligible_for_hacks="SummonTranscendantElderling,TrackElderling,TransformElderling"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="AIWarExternalCode"
+				necromancer_resource_granter_type="Arcen.AIW2.External.ElderlingResourceGranter"
+				immune_to_necromancy="true"
+				name_for_elderling_transformation="HackedAccursedElderling"
+				/>
+		<system
+				name="W1"
+				display_name="Crippling Curse"
+				category="Weapon"
+				firing_timing="OnlyInRange"
+				damage_per_shot="333333"
+				range="AboveAverage4"
+				shot_speed="Slow"
+				rate_of_fire="Normal"
+				fires_salvos_sequentially="true"
+				shot_type_data="MassDriver"
+				base_paralysis_seconds_per_shot="4"
+				paralysis_to_ships_mass_tx_less_than="6"
+				base_percent_damage_bypasses_personal_shields="0.5"
+				>
+			<outgoing_damage_modifier
+					based_on="mass_tx"
+					comparison_type="AtLeast"
+					compared_to="5"
+					multiplier="1.2"
+					/>
+		</system>
+
+		<ship_class_data can_be_zombified_and_similar="false" />
+	</entity>
+
+	<entity
+			name="HackedAccursedElderling"
+			copy_from="AccursedElderling"
+			tags="Elderling,HackedElderling"
+			icon_overlay="Overlays2/SkeletonLord"
+			display_name="Sacrificial Accursed Elderling"
+			display_name_for_sidebar="Accursed E"
+			description="This Accursed Elderling has been transformed. If it is killed by the Necromancer it will allow their flagships to transform into a more powerful one based on the Elderling's trait but will not grant essence."
+			speed="AboveAverage2"
+			eligible_for_hacks="SummonTranscendantElderling,TrackElderling"
+			starting_mark_level="Mark7"
+			aip_on_death="10"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="∅"
+				necromancer_resource_granter_type="∅"
+				necromancer_upgrade_to_grant_on_death="ClaimAccursedFlagship"
+				name_for_elderling_transformation="∅"
+				immune_to_necromancy="true"
+				/>
+	</entity>
+
+	<entity
+			name="EnviousElderling"
+			copy_from="DecadentElderling"
+			thematic_groups="Neinzul,Elderling"
+			visuals="Assets/_DLC3/Elderlings/EnviousElderling/EnviousElderling.prefab"
+			visuals_bundle="exp3_neinzul_abyss"
+			display_name="Envious Elderling"
+			display_name_for_sidebar="Envious E"
+			tags="MedElderling,Elderling,EssenceGranter"
+			icon_name="Ships4/ElderlingMedium"
+			icon_overlay="Overlays2/NecromancerFlagship_Envious"
+			gimbal_icon_size_multiplier="1.5"
+			size_scale="22"
+			visuals_scale_multiplier="170"
+			collision_priority="600"
+			y_offset_of_icon="140"
+			draw_in_galaxy_view="true"
+			starting_mark_level="Mark1"
+			science_to_grant_on_death="50"
+			hull_points="5000000"
+			shield_points="4000000"
+			speed="Normal3"
+			metal_cost="500000"
+			energy_consumption="45000"
+			armor_mm="350"
+			engine_gx="22"
+			albedo="0.7"
+			mass_tx="7"
+			description="This medium Elderling patrols the galaxy. Faster than other Elderlings, it tractors ships that stray too close, including ships up to its own size."
+			description_appender_dll="AIWarExternalCode"
+			description_appender_type="Arcen.AIW2.External.ElderlingsDescriptionAppender"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="AIWarExternalCode"
+				necromancer_resource_granter_type="Arcen.AIW2.External.ElderlingResourceGranter"
+				immune_to_necromancy="true"
+				name_for_elderling_transformation="HackedEnviousElderling"
+				/>
+		<system
+				name="WT"
+				range="Normal3"
+				max_mark_level_to_function="0"
+				/>
+		<system
+				name="WJ"
+				range="Normal3"
+				max_mark_level_to_function="0"
+				/>
+		<system
+				name="RT"
+				display_name="Envious Energy Wave"
+				category="Weapon"
+				firing_timing="OnlyInRange"
+				damage_per_shot="2000"
+				range="AboveAverage1"
+				shot_speed="Normal"
+				rate_of_fire="SlightlyLow"
+				shots_per_salvo="50"
+				fires_salvos_sequentially="false"
+				multiplier_damage_to_tractored_unit="5"
+				shot_type_data="ParasiteCurvedPinkShot"
+				>
+		</system>
+		<system
+				name="RJ"
+				display_name="Tractor Beam"
+				category="Passive"
+				tractor_range="AboveAverage1"
+				tractor_count="50"
+				tractor_count_added_per_mark="50"
+				tractor_hits_albedo_less_than="0.7"
+				tractor_hits_engine_gx_less_than="19"
+				tractor_hits_mass_less_than="7"
+				>
+		</system>
+	</entity>
+
+	<entity
+			name="HackedEnviousElderling"
+			copy_from="EnviousElderling"
+			display_name="Sacrificial Envious Elderling"
+			display_name_for_sidebar="Envious E"
+			tags="Elderling,HackedElderling"
+			icon_overlay="Overlays2/SkeletonLord"
+			description="This Envious Elderling has been transformed. If it is killed by the Necromancer it will allow their flagships to transform into a more powerful one based on the Elderling's trait but will not grant essence."
+			speed="AboveAverage2"
+			eligible_for_hacks="SummonTranscendantElderling,TrackElderling"
+			starting_mark_level="Mark7"
+			aip_on_death="10"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="∅"
+				necromancer_resource_granter_type="∅"
+				necromancer_upgrade_to_grant_on_death="ClaimEnviousFlagship"
+				name_for_elderling_transformation="∅"
+				immune_to_necromancy="true"
+				/>
+	</entity>
+
+	<entity
+			name="BlasphemousElderling"
+			thematic_groups="Neinzul,Elderling"
+			display_name="Blasphemous Elderling"
+			display_name_for_sidebar="Blasphemous E"
+			tags="HighElderling,Elderling,EssenceGranter"
+			visuals="Assets/_DLC3/Elderlings/BlasphemousElderling/BlasphemousElderling.prefab"
+			visuals_bundle="exp3_neinzul_abyss"
+			icon_name="Ships4/ElderlingHigh"
+			icon_overlay="Overlays2/NecromancerFlagship_Blasphemous"
+			gimbal_icon_size_multiplier="1.5"
+			voice_group="Silent"
+			category="Ship"
+			size_scale="30"
+			visuals_scale_multiplier="200"
+			y_offset_of_ship_in_visual_space="140"
+			collision_priority="810"
+			y_offset_of_icon="140"
+			description="Fully grown Elderling that patrols the galaxy. It has a Blaster that specializes in massive targets. For dealing with masses of ships it can focus six beams at a point, hitting intersecting targets and dealing damage based on how many Mark levels the Elderling is above its target. Ships of equal Mark to the Blasphemous Elderling will be unaffected whereas ships six Marks below the Elderling will be vaporized."
+			starting_mark_level="Mark1"
+			tech_upgrades_that_benefit_me="Unused"
+			cost_for_ai_to_purchase="18800"
+			mark_level_scale_style="Elderlings"
+			hull_points="5000000"
+			shield_points="10000000"
+			speed="BelowAverage1"
+			metal_cost="5000000"
+			energy_consumption="100000"
+			armor_mm="210"
+			albedo="0.85"
+			engine_gx="22"
+			mass_tx="12"
+			science_to_grant_on_death="100"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			shows_on_galaxy_map_for_explored_planets="true"
+			draw_in_galaxy_view="true"
+			eligible_for_hacks="SummonTranscendantElderling,TrackElderling,TransformElderling"
+			priority_as_ai_target="NormalStarship"
+			priority_as_frd_target="BiggerStarship"
+			priority_to_protect="SlightlyLessExpendable"
+			description_appender_dll="AIWarExternalCode"
+			description_appender_type="Arcen.AIW2.External.ElderlingsDescriptionAppender"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="AIWarExternalCode"
+				necromancer_resource_granter_type="Arcen.AIW2.External.ElderlingResourceGranter"
+				immune_to_necromancy="true"
+				name_for_elderling_transformation="HackedBlasphemousElderling"
+				/>
+		<system
+				name="R9"
+				display_name="Blasphemous Beams"
+				category="Weapon"
+				firing_timing="OnlyInRange"
+				damage_per_shot="4000"
+				range="AboveAverage5"
+				shot_speed="Normal"
+				rate_of_fire="FairlyLow"
+				shot_type_data="HeavyBeamInvisible"
+				hits_all_intersecting_targets="true"
+				shots_detonate_immediately="true"
+				maximum_number_of_targets_hit_per_shot="40"
+				number_beams_to_fire="5"
+				beam_weapon_visual_style="Laser_PurpleBright"
+				distance_from_center_for_beam_emission="50"
+				ion_percentage_per_mark_level_lower="0.05"
+				ion_damage_to_albedo_less_than="0.7"
+				only_targets_mobile_units="true"
+				>
+		</system>
+		<system
+				name="WS"
+				display_name="Blasphemous Blaster"
+				category="Weapon"
+				firing_timing="OnlyInRange"
+				damage_per_shot="10000"
+				range="AboveAverage5"
+				shot_speed="Normal"
+				rate_of_fire="High"
+				fires_salvos_sequentially="true"
+				shot_type_data="Sabot"
+				>
+			<outgoing_damage_modifier
+					based_on="mass_tx"
+					comparison_type="AtLeast"
+					compared_to="5"
+					multiplier="5"
+					/>
+		</system>
+	</entity>
+
+	<entity
+			name="HackedBlasphemousElderling"
+			copy_from="BlasphemousElderling"
+			display_name="Sacrificial Blasphemous Elderling"
+			display_name_for_sidebar="Blasphemous E"
+			tags="Elderling,HackedElderling"
+			icon_overlay="Overlays2/SkeletonLord"
+			description="This Blasphemous Elderling has been transformed. If it is killed by the Necromancer it will allow their flagships to transform into a more powerful one based on the Elderling's trait but will not grant essence."
+			speed="AboveAverage2"
+			eligible_for_hacks="SummonTranscendantElderling,TrackElderling"
+			starting_mark_level="Mark7"
+			aip_on_death="15"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="∅"
+				necromancer_resource_granter_type="∅"
+				necromancer_upgrade_to_grant_on_death="ClaimBlasphemousFlagship"
+				name_for_elderling_transformation="∅"
+				immune_to_necromancy="true"
+				/>
+	</entity>
+
+	<entity
+			name="PlagueswarmElderling"
+			thematic_groups="Neinzul,Elderling"
+			display_name="Plagueswarm Elderling"
+			display_name_for_sidebar="Plagueswarm E"
+			tags="HighElderling,Elderling,EssenceGranter"
+			visuals="Assets/_DLC3/Elderlings/PlagueswarmElderling/PlagueswarmElderling.prefab"
+			visuals_bundle="exp3_neinzul_abyss"
+			icon_name="Ships4/ElderlingHigh"
+			icon_overlay="Overlays2/NecromancerFlagship_Plagueswarm"
+			gimbal_icon_size_multiplier="1.5"
+			voice_group="Silent"
+			category="Ship"
+			size_scale="30"
+			visuals_scale_multiplier="250"
+			y_offset_of_ship_in_visual_space="140"
+			collision_priority="810"
+			y_offset_of_icon="140"
+			description="Fully grown Elderling that patrols the galaxy. Attacks with corrosive rays that cause damage over time. Surrounds itself in a cloud of corrosive Plaguehosts that siphon victims in range to form corrosive Viral Swarmers."
+			starting_mark_level="Mark1"
+			tech_upgrades_that_benefit_me="Unused"
+			cost_for_ai_to_purchase="16800"
+			mark_level_scale_style="Elderlings"
+			hull_points="7500000"
+			shield_points="7500000"
+			speed="BelowAverage1"
+			metal_cost="5000000"
+			energy_consumption="100000"
+			armor_mm="180"
+			albedo="0.85"
+			engine_gx="22"
+			mass_tx="12"
+			science_to_grant_on_death="100"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			shows_on_galaxy_map_for_explored_planets="true"
+			draw_in_galaxy_view="true"
+			fleet_design_template_i_use_for_drones="NeinzulViralSwarmerDrones"
+			drone_starting_behavior_type="Attacker_Full"
+			build_points_per_second="10"
+			build_point_cost_for_per_second_construction="20"
+			personal_ship_cap_for_per_second_build_point_construction="18"
+			tag_to_spawn_from_for_build_point_for_per_second_construction="PlagueHost"
+			eligible_for_hacks="TransformElderling,SummonTranscendantElderling,TrackElderling"
+			priority_as_ai_target="NormalStarship"
+			priority_as_frd_target="BiggerStarship"
+			priority_to_protect="SlightlyLessExpendable"
+			description_appender_dll="AIWarExternalCode"
+			description_appender_type="Arcen.AIW2.External.ElderlingsDescriptionAppender"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="AIWarExternalCode"
+				necromancer_resource_granter_type="Arcen.AIW2.External.ElderlingResourceGranter"
+				immune_to_necromancy="true"
+				name_for_elderling_transformation="HackedPlagueswarmElderling"
+				/>
+		<system
+				name="W1"
+				display_name="Eldritch Ray"
+				category="Weapon"
+				firing_timing="OnlyInRange"
+				damage_per_shot="1000"
+				range="Normal3"
+				shot_speed="Fast"
+				rate_of_fire="High"
+				shots_per_salvo="32"
+				fires_salvos_sequentially="true"
+				shot_type_data="NecroticRay"
+				base_percent_damage_bypasses_personal_shields="1"
+				corrosion_damage="9000"
+				corrosion_damage_added_per_mark="4500"
+				>
+		</system>
+		<ship_class_data can_be_zombified_and_similar="false" />
+	</entity>
+
+	<entity
+			name="HackedPlagueswarmElderling"
+			copy_from="PlagueswarmElderling"
+			display_name="Sacrificial Plagueswarm Elderling"
+			display_name_for_sidebar="Plagueswarm E"
+			thematic_groups="Neinzul,Elderling,Necromancer"
+			tags="Elderling,HackedElderling"
+			icon_overlay="Overlays2/SkeletonLord"
+			description="This Plagueswarm Elderling has been transformed. Surrounded in a cloud of Plaguehosts, siphoning victims in range to form Viral Swarmers."
+			eligible_for_hacks="SummonTranscendantElderling,TrackElderling"
+			science_to_grant_on_death="0"
+			aip_on_death="15"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="∅"
+				necromancer_resource_granter_type="∅"
+				necromancer_upgrade_to_grant_on_death="ClaimPlagueswarmFlagship"
+				name_for_elderling_transformation="∅"
+				immune_to_necromancy="true"
+				/>
+	</entity>
+
+	<entity
+			name="PlagueHost"
+			tags="PlagueHost"
+			thematic_groups="Neinzul,Elderling"
+			visuals="Assets/_DLC3/Elderlings/PlagueHost/PlagueHost.prefab"
+			visuals_bundle="exp3_neinzul_abyss"
+			icon_name="Ships4/PlagueHost"
+			gimbal_icon_size_multiplier="1"
+			voice_group="Silent"
+			category="Ship"
+			is_strikecraft="true"
+			size_scale="5"
+			visuals_scale_multiplier="40"
+			collision_priority="100"
+			display_name="Plague Host"
+			description="Infectious, minuscule Neinzul beings."
+			starting_mark_level="Markless"
+			tech_upgrades_that_benefit_me="Unused"
+			cost_for_ai_to_purchase="6"
+			strength_multiplier="0.2"
+			hull_points="8000"
+			shield_points="0"
+			speed="Immobile"
+			metal_cost="100"
+			energy_consumption="100"
+			armor_mm="40"
+			albedo="0.65"
+			mass_tx="0.21"
+			ship_or_structure_explosion_sfx="ShipSmall_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostOnOtherPlanet_Explosion"
+			orbits_flagship_at_range="4800"
+			degrees_to_orbit_per_second="12"
+			attempts_to_reach_orbital_point_at_speed="8000"
+			dies_if_parent_dies="true"
+			immune_to_swapping_between_fleets="true"
+			unit_to_make_with_build_points="ViralSwarmer"
+			base_ship_line_for_build_points="ViralSwarmer"
+			build_points_per_damage_dealt="1"
+			priority_as_ai_target="NormalFleetship"
+			priority_as_frd_target="NormalFleetship"
+			priority_to_protect="Expendable"
+			>
+		<system
+				name="W1"
+				display_name="Infectious Bile"
+				category="Weapon"
+				firing_timing="OnlyInRange"
+				damage_per_shot="2500"
+				range="Small5"
+				shot_speed="Fast"
+				rate_of_fire="Devourer"
+				fires_salvos_sequentially="true"
+				shot_type_data="DoubleShot_Green"
+				base_percent_damage_bypasses_personal_shields="1"
+				corrosion_damage="2500"
+				>
+		</system>
+		<ship_class_data can_be_zombified_and_similar="false" />
+	</entity>
+
+	<entity
+			name="ViralSwarmer"
+			thematic_groups="Neinzul,Elderling"
+			special_entity_type="DroneGeneral"
+			visuals="Assets/_DLC3/Elderlings/ViralSwarmer/ViralSwarmer.prefab"
+			visuals_bundle="exp3_neinzul_abyss"
+			icon_name="Ships4/ViralSwarmer"
+			gimbal_icon_size_multiplier="1"
+			voice_group="Silent"
+			category="Ship"
+			is_strikecraft="true"
+			size_scale="3"
+			visuals_scale_multiplier="16"
+			collision_priority="100"
+			display_name="Viral Swarmer"
+			display_name_for_sidebar="N Viral Swarm"
+			description="Formed from the material siphoned by Plague Hosts."
+			starting_mark_level="Markless"
+			tech_upgrades_that_benefit_me="Unused"
+			cost_for_ai_to_purchase="6"
+			strength_multiplier="0.2"
+			hull_points="8000"
+			shield_points="0"
+			speed="AboveAverage3"
+			metal_cost="1000"
+			energy_consumption="100"
+			armor_mm="40"
+			albedo="0.65"
+			engine_gx="10"
+			mass_tx="0.21"
+			blocks_ceasefire_on_planet="true"
+			ship_or_structure_explosion_sfx="ShipSmall_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostOnOtherPlanet_Explosion"
+			cannot_target_or_alert_ai_reinforcement_spots="true"
+			self_attritions_X_percent_per_second_if_parent_ship_not_on_planet="1"
+			always_self_attritions="true"
+			unit_to_make_with_build_points="ViralSwarmer"
+			base_ship_line_for_build_points="ViralSwarmer"
+			build_points_per_damage_dealt="1"
+			priority_as_ai_target="NormalFleetship"
+			priority_as_frd_target="NormalFleetship"
+			priority_to_protect="Expendable"
+			>
+		<fleet_membership
+				name="NeinzulViralSwarmerDrones"
+				ship_cap_group="Strike"
+				weight="100"
+				cap="50"
+				/>
+		<system
+				name="W1"
+				display_name="Fusion Cutter"
+				category="Weapon"
+				firing_timing="OnlyInRange"
+				damage_per_shot="1250"
+				range="AlmostNone"
+				shot_speed="Fast"
+				rate_of_fire="Devourer"
+				fires_salvos_sequentially="true"
+				shot_type_data="MeleeInvisible"
+				added_target_evaluator="Melee"
+				base_percent_damage_bypasses_personal_shields="1"
+				corrosion_damage="1250"
+				>
+		</system>
+	</entity>
+
+	<entity
+			name="DrakeElderling"
+			thematic_groups="Neinzul,Elderling"
+			display_name="Nether Drake Elderling"
+			display_name_for_sidebar="Nether Drake"
+			tags="HighElderling,Elderling,EssenceGranter"
+			visuals="Assets/_DLC3/Elderlings/DrakeElderling/DrakeElderling.prefab"
+			visuals_bundle="exp3_neinzul_abyss"
+			icon_name="Ships4/ElderlingHigh"
+			icon_overlay="Overlays2/NecromancerFlagship_Drake"
+			gimbal_icon_size_multiplier="1.5"
+			voice_group="Silent"
+			category="Ship"
+			size_scale="30"
+			visuals_scale_multiplier="240"
+			y_offset_of_ship_in_visual_space="150"
+			collision_priority="810"
+			y_offset_of_icon="140"
+			description="Fully grown Elderling that patrols the galaxy. Breathes fire...and fireballs."
+			starting_mark_level="Mark1"
+			cost_for_ai_to_purchase="16800"
+			mark_level_scale_style="Elderlings"
+			hull_points="10000000"
+			shield_points="5000000"
+			speed="BelowAverage1"
+			metal_cost="5000000"
+			energy_consumption="100000"
+			armor_mm="350"
+			albedo="0.85"
+			engine_gx="22"
+			mass_tx="12"
+			science_to_grant_on_death="100"
+			blocks_ceasefire_on_planet="true"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			shows_on_galaxy_map_for_explored_planets="true"
+			draw_in_galaxy_view="true"
+			build_points_per_second="5"
+			build_point_cost_for_per_second_construction="10"
+			personal_ship_cap_for_per_second_build_point_construction="5"
+			tag_to_spawn_from_for_build_point_for_per_second_construction="Fireball"
+			eligible_for_hacks="TransformElderling,SummonTranscendantElderling,TrackElderling"
+			priority_as_ai_target="NormalStarship"
+			priority_as_frd_target="BiggerStarship"
+			priority_to_protect="SlightlyLessExpendable"
+			description_appender_dll="AIWarExternalCode"
+			description_appender_type="Arcen.AIW2.External.ElderlingsDescriptionAppender"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="AIWarExternalCode"
+				necromancer_resource_granter_type="Arcen.AIW2.External.ElderlingResourceGranter"
+				immune_to_necromancy="true"
+				name_for_elderling_transformation="HackedDrakeElderling"
+				/>
+		<system
+				name="V9"
+				display_name="Flame Wave"
+				category="Weapon"
+				firing_timing="OnlyInRange"
+				damage_per_shot="9000"
+				range="Normal3"
+				shot_speed="Fast"
+				rate_of_fire="Devourer"
+				shots_per_salvo="32"
+				fires_salvos_sequentially="true"
+				shot_type_data="FlameWave"
+				>
+		</system>
+		<ship_class_data can_be_zombified_and_similar="false" />
+	</entity>
+
+	<entity
+			name="HackedDrakeElderling"
+			copy_from="DrakeElderling"
+			display_name="Sacrificial Nether Drake Elderling"
+			display_name_for_sidebar="Drake E"
+			thematic_groups="Neinzul,Elderling,Necromancer"
+			tags="Elderling,HackedElderling"
+			icon_overlay="Overlays2/SkeletonLord"
+			description="This Drake Elderling has been transformed. Breathes fire...and fireballs."
+			eligible_for_hacks="SummonTranscendantElderling,TrackElderling"
+			science_to_grant_on_death="0"
+			aip_on_death="15"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="∅"
+				necromancer_resource_granter_type="∅"
+				necromancer_upgrade_to_grant_on_death="ClaimDrakeFlagship"
+				name_for_elderling_transformation="∅"
+				immune_to_necromancy="true"
+				/>
+	</entity>
+
+	<entity
+			name="Fireball"
+			tags="Fireball"
+			thematic_groups="Neinzul,Elderling"
+			visuals="Assets/_DLC3/Necromancer/Fireball/Fireball.prefab"
+			visuals_bundle="exp3_neinzul_abyss"
+			icon_name="Ships4/Fireball"
+			voice_group="Silent"
+			category="Ship"
+			is_strikecraft="true"
+			size_scale="2"
+			visuals_scale_multiplier="30"
+			collision_priority="100"
+			display_name="Fireball"
+			description="A burning ball of fire."
+			starting_mark_level="Markless"
+			tech_upgrades_that_benefit_me="Unused"
+			cost_for_ai_to_purchase="6"
+			strength_multiplier="0.2"
+			hull_points="50000"
+			shield_points="0"
+			speed="Immobile"
+			metal_cost="10"
+			energy_consumption="0"
+			armor_mm="40"
+			albedo="0.65"
+			mass_tx="2"
+			blocks_ceasefire_on_planet="true"
+			ship_or_structure_explosion_sfx="ShipSmall_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostOnOtherPlanet_Explosion"
+			orbits_parent_at_range="4800"
+			degrees_to_orbit_per_second="60"
+			attempts_to_reach_orbital_point_at_speed="8000"
+			dies_if_parent_dies="true"
+			immune_to_swapping_between_fleets="true"
+			priority_as_ai_target="NormalFleetship"
+			priority_as_frd_target="NormalFleetship"
+			priority_to_protect="Expendable"
+			>
+		<system
+				name="W1"
+				display_name="Fireball"
+				category="Weapon"
+				firing_timing="OnlyInRange"
+				damage_per_shot="100000"
+				range="VeryTiny4"
+				shot_speed="Fast"
+				rate_of_fire="Devourer"
+				fires_salvos_sequentially="true"
+				shot_type_data="MeleeInvisible"
+				added_target_evaluator="Melee"
+				health_change_by_max_health_divided_by_this_per_attack="-1"
+				>
+		</system>
+		<ship_class_data can_be_zombified_and_similar="false" />
+	</entity>
+
+	<entity
+			name="EldritchElderling"
+			thematic_groups="Neinzul,Elderling"
+			tags="Elderling,TranscendantElderling,EssenceGranter"
+			icon_name="Ships4/ElderlingTranscendant"
+			gimbal_icon_size_multiplier="1.5"
+			display_name="Yellow Sun Eldritch Elderling"
+			display_name_for_sidebar="Y Eldritch"
+			voice_group="Silent"
+			category="Ship"
+			visuals="Assets/_DLC3/Elderlings/EldritchElderling/YellowSunEldritchEldering.prefab"
+			visuals_bundle="exp3_neinzul_abyss"
+			size_scale="45"
+			visuals_scale_multiplier="350"
+			y_offset_of_ship_in_visual_space="400"
+			collision_priority="810"
+			y_offset_of_icon="180"
+			description="This giant Elderling, born from a yellow sun, has been summoned by the unwise into the galaxy."
+			starting_mark_level="Markless"
+			cost_for_ai_to_purchase="350000"
+			mark_level_scale_style="Elderlings"
+			hull_points="50000000"
+			shield_points="30000000"
+			speed="High"
+			metal_cost="10000000"
+			energy_consumption="100000"
+			armor_mm="350"
+			albedo="0.85"
+			engine_gx="18"
+			mass_tx="14"
+			aip_on_death="25"
+			max_number_of_weapon_points="10"
+			blocks_ceasefire_on_planet="true"
+			ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_if_on_other_planet_sfx="ShipLostMassive_Explosion"
+			ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+			shows_on_galaxy_map_for_explored_planets="true"
+			draw_in_galaxy_view="true"
+			eligible_for_hacks="TrackElderling"
+			priority_as_ai_target="NormalStarship"
+			priority_as_frd_target="BiggerStarship"
+			priority_to_protect="SlightlyLessExpendable"
+			description_appender_dll="AIWarExternalCode"
+			description_appender_type="Arcen.AIW2.External.ElderlingsDescriptionAppender"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_one_to_grant_on_death="100"
+				immune_to_necromancy="true"
+				name_for_elderling_transformation="∅"
+				necromancer_upgrade_to_grant_on_death="ClaimTranscendentFlagship"
+				/>
+		<system
+				name="V9"
+				display_name="Yellow Solar Flare"
+				category="Weapon"
+				firing_timing="OnlyInRange"
+				damage_per_shot="15000"
+				range="High1"
+				shot_speed="Normal"
+				rate_of_fire="High"
+				shot_type_data="HeavyBeamInvisible"
+				hits_all_intersecting_targets="true"
+				shots_detonate_immediately="true"
+				maximum_number_of_targets_hit_per_shot="30"
+				number_beams_to_fire="20"
+				beam_weapon_visual_style="Laser_YellowBright"
+				degrees_offset_per_beam="1"
+				number_of_weapon_points_to_gain_on_firing="1"
+				>
+		</system>
+		<system
+				name="W2"
+				display_name="Supernova"
+				category="Weapon"
+				firing_timing="OnlyInRange"
+				damage_per_shot="30000"
+				range="Planetary"
+				shot_speed="Normal"
+				rate_of_fire="Sloth"
+				fires_salvos_sequentially="true"
+				shot_type_data="LightningExplosionAOEShot"
+				area_of_effect_size="999999"
+				shots_detonate_immediately="true"
+				maximum_number_of_targets_hit_per_shot="500"
+				additional_damage_modifier_per_weapon_point="1"
+				number_of_weapon_points_to_consume_on_firing="10"
+				>
+			<outgoing_damage_modifier
+					based_on="Albedo"
+					comparison_type="AtLeast"
+					compared_to="0.7"
+					multiplier="0.01"
+					/>
+		</system>
+		<ship_class_data can_be_zombified_and_similar="false" />
+	</entity>
+
+	<entity
+			name="EldritchElderlingRedGiant"
+			copy_from="EldritchElderling"
+			tags="Elderling,TranscendantElderling,EssenceGranter"
+			display_name="Red Giant Eldritch Elderling"
+			display_name_for_sidebar="R Eldritch"
+			description="This giant Elderling, born from a red giant star, has been summoned by the unwise into the galaxy."
+			visuals="Assets/_DLC3/Elderlings/EldritchElderling/RedGiantEldritchEldering.prefab"
+			visuals_bundle="exp3_neinzul_abyss"
+			>
+		<system
+				name="V9"
+				display_name="Red Solar Flare"
+				beam_weapon_visual_style="Laser_RedBlack"
+				></system>
+	</entity>
+
+	<entity
+			name="AIFeebleElderling"
+			copy_from="FeebleElderling"
+			thematic_groups="Hidden"
+			display_name="AI Feeble Elderling"
+			display_name_for_sidebar="AI Feeb Elder"
+			size_scale="9"
+			visuals_scale_multiplier="60"
+			gimbal_icon_size_multiplier="1.4"
+			cost_for_ai_to_purchase="450"
+			starting_mark_level="Mark1"
+			mark_level_scale_style="Guardians"
+			description="The AI has tamed this Feeble Elderling."
+			speed="AboveAverage1"
+			draw_in_galaxy_view="false"
+			science_to_grant_on_death="0"
+			eligible_for_hacks="None"
+			description_appender_type="∅"
+			multiplier_to_all_healths="0.15"
+			damage_multiplier_to_all_weapons="0.4"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="∅"
+				necromancer_resource_granter_type="∅"
+				necromancer_hacking_to_grant_on_death="0"
+				immune_to_necromancy="false"
+				name_for_elderling_transformation="∅"
+				/>
+		<ai_ship_group_membership
+				name="ElderlingGuardians"
+				weight="100"
+				/>
+	</entity>
+
+	<entity
+			name="AISlothfulElderling"
+			copy_from="SlothfulElderling"
+			thematic_groups="Hidden"
+			display_name="AI Slothful Elderling"
+			display_name_for_sidebar="AI Sloth Elder"
+			size_scale="9"
+			visuals_scale_multiplier="60"
+			gimbal_icon_size_multiplier="1.4"
+			cost_for_ai_to_purchase="1150"
+			starting_mark_level="Mark1"
+			mark_level_scale_style="Guardians"
+			description="The AI has tamed this Slothful Elderling. It fires in bursts, specializing against enemies with strong engines."
+			draw_in_galaxy_view="false"
+			science_to_grant_on_death="0"
+			eligible_for_hacks="None"
+			description_appender_type="∅"
+			multiplier_to_all_healths="0.1"
+			damage_multiplier_to_all_weapons="0.2"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="∅"
+				necromancer_resource_granter_type="∅"
+				immune_to_necromancy="false"
+				name_for_elderling_transformation="∅"
+				/>
+		<ai_ship_group_membership
+				name="ElderlingGuardians"
+				weight="100"
+				/>
+	</entity>
+
+	<entity
+			name="AIWrathfulElderling"
+			copy_from="WrathfulElderling"
+			thematic_groups="Hidden"
+			display_name="AI Wrathful Elderling"
+			display_name_for_sidebar="AI Wrath Elder"
+			size_scale="9"
+			visuals_scale_multiplier="60"
+			gimbal_icon_size_multiplier="1.4"
+			y_offset_of_ship_in_visual_space="50"
+			cost_for_ai_to_purchase="950"
+			strength_multiplier="1.75"
+			starting_mark_level="Mark1"
+			mark_level_scale_style="Guardians"
+			description="The AI has tamed this Wrathful Elderling. It gets stronger as it or its prey takes damage."
+			speed="AboveAverage2"
+			draw_in_galaxy_view="false"
+			science_to_grant_on_death="0"
+			eligible_for_hacks="None"
+			description_appender_type="∅"
+			multiplier_to_all_healths="0.1"
+			damage_multiplier_to_all_weapons="0.3"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="∅"
+				necromancer_resource_granter_type="∅"
+				immune_to_necromancy="false"
+				name_for_elderling_transformation="∅"
+				/>
+		<ai_ship_group_membership
+				name="ElderlingGuardians"
+				weight="100"
+				/>
+	</entity>
+
+	<entity
+			name="AICyclopeanElderling"
+			copy_from="CyclopeanElderling"
+			thematic_groups="Hidden"
+			display_name="AI Cyclopean Elderling"
+			display_name_for_sidebar="AI Cyc Elder"
+			size_scale="9"
+			visuals_scale_multiplier="60"
+			gimbal_icon_size_multiplier="1.4"
+			cost_for_ai_to_purchase="1100"
+			starting_mark_level="Mark1"
+			mark_level_scale_style="Guardians"
+			description="The AI has tamed this Feeble Elderling. Fires a beam that bypasses shields."
+			speed="AboveAverage1"
+			draw_in_galaxy_view="false"
+			science_to_grant_on_death="0"
+			eligible_for_hacks="None"
+			description_appender_type="∅"
+			multiplier_to_all_healths="0.1"
+			damage_multiplier_to_all_weapons="0.3"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="∅"
+				necromancer_resource_granter_type="∅"
+				immune_to_necromancy="false"
+				name_for_elderling_transformation="∅"
+				/>
+		<ai_ship_group_membership
+				name="ElderlingGuardians"
+				weight="100"
+				/>
+	</entity>
+
+	<entity
+			name="AIAccursedElderling"
+			copy_from="AccursedElderling"
+			thematic_groups="Hidden"
+			display_name="AI Accursed Elderling"
+			display_name_for_sidebar="AI Cursed Elder"
+			size_scale="9"
+			visuals_scale_multiplier="60"
+			gimbal_icon_size_multiplier="1.4"
+			cost_for_ai_to_purchase="1650"
+			starting_mark_level="Mark1"
+			mark_level_scale_style="Guardians"
+			description="The AI has tamed this Accursed Elderling. Paralyzes even massive ships and reflects damage back to its source."
+			speed="Normal2"
+			draw_in_galaxy_view="false"
+			science_to_grant_on_death="0"
+			eligible_for_hacks="None"
+			description_appender_type="∅"
+			multiplier_to_all_healths="0.02"
+			damage_multiplier_to_all_weapons="0.02"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="∅"
+				necromancer_resource_granter_type="∅"
+				immune_to_necromancy="false"
+				name_for_elderling_transformation="∅"
+				/>
+		<ai_ship_group_membership
+				name="ElderlingGuardians"
+				weight="100"
+				/>
+	</entity>
+
+	<entity
+			name="AIDecadentElderling"
+			copy_from="DecadentElderling"
+			thematic_groups="Hidden"
+			display_name="AI Decadent Elderling"
+			special_entity_type="AIDireGuardian"
+			display_name_for_sidebar="AI Dec Elder"
+			starting_mark_level="Mark7"
+			description="The AI has tamed this Decadent Elderling. Pulls ships close so they can be devoured, healing itself in the process."
+			draw_in_galaxy_view="true"
+			science_to_grant_on_death="0"
+			eligible_for_hacks="None"
+			description_appender_type="∅"
+			hull_points="900000"
+			shield_points="450000"
+			cost_for_ai_to_purchase="12500"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="∅"
+				necromancer_resource_granter_type="∅"
+				immune_to_necromancy="false"
+				name_for_elderling_transformation="∅"
+				/>
+		<ai_ship_group_membership
+				name="ElderlingDireGuardians"
+				weight="100"
+				/>
+		<system
+				name="WT"
+				knockback_to_ships_mass_tx_less_than="5"
+				/>
+		<system
+				name="WJ"
+				devour_mass_lower_than="5"
+				/>
+	</entity>
+
+	<entity
+			name="AIEnviousElderling"
+			copy_from="EnviousElderling"
+			thematic_groups="Hidden"
+			display_name="AI Envious Elderling"
+			special_entity_type="AIDireGuardian"
+			display_name_for_sidebar="AI Envy Elder"
+			starting_mark_level="Mark7"
+			description="The AI has tamed this Envious Elderling. Has advanced tractor beams that can restrain ships up to its own size."
+			draw_in_galaxy_view="true"
+			science_to_grant_on_death="0"
+			eligible_for_hacks="None"
+			description_appender_type="∅"
+			hull_points="750000"
+			shield_points="600000"
+			cost_for_ai_to_purchase="13750"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="∅"
+				necromancer_resource_granter_type="∅"
+				immune_to_necromancy="false"
+				name_for_elderling_transformation="∅"
+				/>
+		<ai_ship_group_membership
+				name="ElderlingDireGuardians"
+				weight="100"
+				/>
+	</entity>
+
+	<entity
+			name="AIBlasphemousElderling"
+			copy_from="BlasphemousElderling"
+			thematic_groups="Hidden"
+			display_name="AI Blasphemous Elderling"
+			display_name_for_sidebar="AI Blasph Elder"
+			starting_mark_level="Mark7"
+			special_entity_type="AIDireGuardian"
+			strength_multiplier="2"
+			description="The AI has tamed this Blasphemous Elderling. Focus five beams at a point that deal more damage to ships of lower Mark compared to itself."
+			draw_in_galaxy_view="true"
+			science_to_grant_on_death="0"
+			eligible_for_hacks="None"
+			description_appender_type="∅"
+			multiplier_to_all_healths="0.15"
+			damage_multiplier_to_all_weapons="0.2"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="∅"
+				necromancer_resource_granter_type="∅"
+				immune_to_necromancy="false"
+				name_for_elderling_transformation="∅"
+				/>
+		<ai_ship_group_membership
+				name="ElderlingDireGuardians"
+				weight="25"
+				/>
+	</entity>
+
+	<entity
+			name="AIPlagueswarmElderling"
+			copy_from="PlagueswarmElderling"
+			thematic_groups="Hidden"
+			display_name="AI Plagueswarm Elderling"
+			display_name_for_sidebar="AI Plague Elder"
+			tags="BecomesNecromancyMummy"
+			special_entity_type="LoneGolem"
+			starting_mark_level="Mark7"
+			description="The AI has tamed this Plagueswarm Elderling. Spawns encircling Plaguehosts that create viralswarms as they deal damage."
+			draw_in_galaxy_view="true"
+			science_to_grant_on_death="0"
+			eligible_for_hacks="None"
+			description_appender_type="∅"
+			multiplier_to_all_healths="0.35"
+			damage_multiplier_to_all_weapons="0.35"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="∅"
+				necromancer_resource_granter_type="∅"
+				immune_to_necromancy="false"
+				name_for_elderling_transformation="∅"
+				/>
+		<ai_ship_group_membership
+				name="ElderlingExoLeaders"
+				weight="100"
+				/>
+	</entity>
+
+	<entity
+			name="AIDrakeElderling"
+			copy_from="DrakeElderling"
+			thematic_groups="Hidden"
+			display_name="AI Nether Drake Elderling"
+			display_name_for_sidebar="AI Drake Elder"
+			tags="BecomesNecromancyMummy"
+			special_entity_type="LoneGolem"
+			starting_mark_level="Mark7"
+			description="The AI has tamed this Nether Drake Elderling. Breathes fire ... and fireballs."
+			draw_in_galaxy_view="true"
+			science_to_grant_on_death="0"
+			eligible_for_hacks="None"
+			description_appender_type="∅"
+			multiplier_to_all_healths="0.35"
+			damage_multiplier_to_all_weapons="0.35"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_granter_dll="∅"
+				necromancer_resource_granter_type="∅"
+				immune_to_necromancy="false"
+				name_for_elderling_transformation="∅"
+				/>
+		<ai_ship_group_membership
+				name="ElderlingExoLeaders"
+				weight="100"
+				/>
+	</entity>
+
+	<entity
+			name="AIEldritchElderling"
+			copy_from="EldritchElderling"
+			thematic_groups="Hidden"
+			tags="BecomesNecromancyMummy"
+			special_entity_type="LoneGolem"
+			cost_for_ai_to_purchase="55000"
+			starting_mark_level="Markless"
+			draw_in_galaxy_view="true"
+			science_to_grant_on_death="0"
+			eligible_for_hacks="None"
+			description_appender_type="∅"
+			multiplier_to_all_healths="0.1"
+			damage_multiplier_to_all_weapons="0.15"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_resource_one_to_grant_on_death="0"
+				necromancer_resource_one_to_grant_on_death_per_mark="0"
+				immune_to_necromancy="false"
+				name_for_elderling_transformation="∅"
+				/>
+		<ai_ship_group_membership
+				name="ElderlingExoLeaders"
+				weight="25"
+				/>
+	</entity>
+-->
+
+	<entity	name="SlothfulElderling"
+			is_partial_record="true"
+			>
+		<system name="V1">
+			<outgoing_damage_modifier
+					based_on="CurrentSpeedIfMoving"
+					comparison_type="AtLeast"
+					compared_to="1000"
+					multiplier="2"
+					/>
+		</system>
+	</entity>
+
+</root>

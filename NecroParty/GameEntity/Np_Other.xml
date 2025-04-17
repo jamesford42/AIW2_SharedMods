@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+	<entity
+			name="DistributionNode"
+			is_partial_record="true"
+			>
+		<data_extension
+				name="DLC3"
+				necromancer_science_to_grant_on_death="1200"
+				necromancer_hacking_to_grant_on_death="35"
+				necromancer_resource_one_to_grant_on_death="30"
+				/>
+	</entity>
+
+
+    <entity
+            name="Treacherous Totem"
+            is_partial_record="true"
+            
+            adds_black_hole_effect_for_entities_with_engine_gx_less_than="20"
+            >
+    </entity>
+
+</root>

@@ -1,0 +1,10 @@
+This mod makes dramatic gameplay changes for <color=#0BDA51>Necromancer</color> players.
+
+Goal:
+More variety in winning strategies.
+Give less used mechanics and ships a purpose.
+Make each Necromancer game and galaxy feel more varied.
+
+Details:
+* <u>Templar Rifts</u> are now <u>pre-seeded</u> across the galaxy and do not spawn over time. You will discover what is available in the galaxy as you explore it and make best use of what is there. 
+* All lines and flagships have been tweaked to have a value appropriate to their cost .. and could be all you can find anyway!

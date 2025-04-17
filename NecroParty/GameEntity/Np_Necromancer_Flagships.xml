@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+	<!-- Modules Reference -->
+	<!-- 
+	<system
+			name="M1"
+			display_name="Reinforced Hull"
+	/>
+	<system
+			name="M2"
+			display_name="Reinforced Shield"
+			/>
+	<system
+			name="FF"
+			display_name="Forcefield"
+			/>
+	<system
+			name="TB"
+			display_name="Tractor Beam"
+			/>
+	<system
+			name="GC"
+			display_name="Gravitic Core"
+			/>
+	<system
+			name="DC"
+			display_name="Decloaker"
+			/>
+	<system
+			name="CL"
+			display_name="Cloaking"
+			/>
+	<system
+			name="W2"
+			display_name="Anti-Shield Plasma Bolt"
+			/>
+	<system
+			name="W3"
+			display_name="Fusion Bomb"
+			/>
+	<system
+			name="M3"
+			display_name="Enhanced Hull"
+			/>
+	<system
+			name="M4"
+			display_name="Enhanced Shield"
+			/>
+	-->
+
+	<entity	name="NecromancerBaseFlagship"
+			is_partial_record="true"
+
+            my_forcefield_has_no_penalty_for_enemies_firing_out_of_it="true"
+            my_forcefield_does_not_shrink="true"
+            engine_gx="18"
+			>
+
+			<system
+					name="FF"
+					display_name="Forcefield"
+					module_point_cost="1"
+					/>
+
+			<system
+					name="M1"
+					display_name="Reinforced Hull"
+					system_is_hidden_for_ui="true"
+					/>
+			<system
+					name="M3"
+					display_name="Enhanced Hull"
+					system_is_hidden_for_ui="true"
+					/>
+			<system
+					name="CL"
+					display_name="Cloaking"
+					system_is_hidden_for_ui="true"
+					/>
+			<system
+					name="W3"
+					display_name="Fusion Bomb"
+					system_is_hidden_for_ui="true"
+					/>
+
+	</entity>
+
+	<!-- No changes, has all modules -->
+	<entity	name="NecromancerBlasterFlagship"
+			is_partial_record="true"
+
+            my_forcefield_has_no_penalty_for_enemies_firing_out_of_it="true"
+            my_forcefield_does_not_shrink="true"
+			engine_gx="18"
+			>
+
+			<system
+					name="FF"
+					display_name="Forcefield"
+					module_point_cost="1"
+					/>
+	</entity>
+
+	<!-- No changes, has all modules  -->
+	<entity	name="NecromancerTankFlagship"
+			is_partial_record="true"
+
+            my_forcefield_has_no_penalty_for_enemies_firing_out_of_it="true"
+            my_forcefield_does_not_shrink="true"
+			engine_gx="18"
+			>
+
+			<system
+					name="FF"
+					display_name="Forcefield"
+					module_point_cost="1"
+					/>
+	</entity>
+
+	<!-- No changes, has all modules  -->
+	<entity	name="NecromancerStarburstFlagship"
+			is_partial_record="true"
+
+            my_forcefield_has_no_penalty_for_enemies_firing_out_of_it="true"
+            my_forcefield_does_not_shrink="true"
+			engine_gx="18"
+			>
+
+			<system
+					name="FF"
+					display_name="Forcefield"
+					module_point_cost="1"
+					/>
+	</entity>
+
+	<entity	name="NecromancerWrathfulFlagship"
+			is_partial_record="true"
+			engine_gx="18"
+			>
+
+			<system
+					name="FF"
+					display_name="Forcefield"
+					module_point_cost="1"
+					/>
+
+			<system
+					name="CL"
+					display_name="Cloaking"
+					system_is_hidden_for_ui="true"
+					/>
+	</entity>
+
+	<entity	name="NecromancerEnviousFlagship"
+			is_partial_record="true"
+
+            my_forcefield_has_no_penalty_for_enemies_firing_out_of_it="true"
+            my_forcefield_does_not_shrink="true"
+			engine_gx="18"
+			>
+
+			<system
+					name="FF"
+					display_name="Forcefield"
+					module_point_cost="1"
+					/>
+
+			<system
+					name="CL"
+					display_name="Cloaking"
+					system_is_hidden_for_ui="true"
+					/>
+	</entity>
+
+	<entity	name="NecromancerPlagueswarmFlagship"
+			is_partial_record="true"
+			engine_gx="18"
+			>
+
+			<system
+					name="FF"
+					display_name="Forcefield"
+					module_point_cost="1"
+					/>
+
+			<system
+					name="CL"
+					display_name="Cloaking"
+					system_is_hidden_for_ui="true"
+					/>
+	</entity>
+
+	<entity	name="NecromancerSlothfulFlagship"
+			is_partial_record="true"
+			engine_gx="18"
+			>
+
+			<system
+					name="FF"
+					display_name="Forcefield"
+					module_point_cost="1"
+					/>
+
+			<system
+					name="W3"
+					display_name="Fusion Bomb"
+					system_is_hidden_for_ui="true"
+					/>
+
+			<system name="V1">
+				<outgoing_damage_modifier
+						based_on="CurrentSpeedIfMoving"
+						comparison_type="AtLeast"
+						compared_to="1000"
+						multiplier="2"
+						/>
+			</system>
+	</entity>
+
+	<entity	name="NecromancerDecadentFlagship"
+			is_partial_record="true"
+			engine_gx="18"
+			>
+
+			<system
+					name="FF"
+					display_name="Forcefield"
+					module_point_cost="1"
+					/>
+
+			<system
+					name="W3"
+					display_name="Fusion Bomb"
+					system_is_hidden_for_ui="true"
+					/>
+	</entity>
+
+	<entity	name="NecromancerDrakeFlagship"
+			is_partial_record="true"
+			engine_gx="18"
+			>
+
+			<system
+					name="FF"
+					display_name="Forcefield"
+					module_point_cost="1"
+					/>
+
+			<system
+				name="W3"
+				display_name="Fusion Bomb"
+				system_is_hidden_for_ui="true"
+			/>
+	</entity>
+
+	<entity	name="NecromancerCyclopeanFlagship"
+			is_partial_record="true"
+			engine_gx="18"
+			>
+
+			<system
+					name="FF"
+					display_name="Forcefield"
+					module_point_cost="1"
+					/>
+
+			<system
+				name="M1"
+				display_name="Reinforced Hull"
+				system_is_hidden_for_ui="true"
+			/>
+
+			<system
+				name="M3"
+				display_name="Enhanced Hull"
+				system_is_hidden_for_ui="true"
+			/>
+	</entity>
+
+	<entity	name="NecromancerAccursedFlagship"
+			is_partial_record="true"
+			engine_gx="18"
+			>
+
+			<system
+					name="FF"
+					display_name="Forcefield"
+					module_point_cost="1"
+					/>
+
+			<system
+				name="M1"
+				display_name="Reinforced Hull"
+				system_is_hidden_for_ui="true"
+			/>
+
+			<system
+				name="M3"
+				display_name="Enhanced Hull"
+				system_is_hidden_for_ui="true"
+			/>
+	</entity>
+
+	<entity	name="NecromancerBlasphemousFlagship"
+			is_partial_record="true"
+			engine_gx="18"
+			>
+
+			<system
+					name="FF"
+					display_name="Forcefield"
+					module_point_cost="1"
+					/>
+
+			<system
+				name="M1"
+				display_name="Reinforced Hull"
+				system_is_hidden_for_ui="true"
+			/>
+
+			<system
+				name="M3"
+				display_name="Enhanced Hull"
+				system_is_hidden_for_ui="true"
+			/>
+	</entity>
+
+</root>

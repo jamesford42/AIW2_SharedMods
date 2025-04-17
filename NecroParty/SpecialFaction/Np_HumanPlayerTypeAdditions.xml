@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+    <faction
+            name="Human"
+            is_partial_record="true"
+            >
+
+        <custom_field
+                name="BonusStartingResources"
+                is_partial_record="true"
+                max_campaign_harshness_to_display="-100"
+                fixed_value_if_above_campaign_harshness="0"
+                is_hidden="true"
+                />
+        <custom_field
+                name="BonusSkeletonCap"
+                is_partial_record="true"
+                max_campaign_harshness_to_display="-100"
+                fixed_value_if_above_campaign_harshness="0"
+                is_hidden="true"
+                />
+        <custom_field
+                name="BonusWightCap"
+                is_partial_record="true"
+                max_campaign_harshness_to_display="-100"
+                fixed_value_if_above_campaign_harshness="0"
+                is_hidden="true"
+                />
+        <custom_field
+                name="BonusStartingWight"
+                is_partial_record="true"
+                max_campaign_harshness_to_display="-100"
+                fixed_value_if_above_campaign_harshness="0"
+                is_hidden="true"
+                />
+        <custom_field
+                name="StartWithAllUpgrades"
+                is_partial_record="true"
+                max_campaign_harshness_to_display="-100"
+                fixed_value_if_above_campaign_harshness="0"
+                is_hidden="true"
+                />
+
+    </faction>
+
+</root>

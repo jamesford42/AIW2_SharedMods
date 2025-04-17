@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+	<entity
+			name="NecromancerMajorNecropolis"
+			is_partial_record="true"
+
+            watch_planets_at_X_hops="1"
+			>
+	</entity>
+
+</root>

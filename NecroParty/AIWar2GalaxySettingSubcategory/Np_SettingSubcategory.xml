@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+	<setting_subcategory parent="Necromancer" name="NecroParty" display_name="&lt;u&gt;Necro Party&lt;/u&gt;" description="Necromancer settings from Necro Party." color="46f0ff"/>
+    <setting_subcategory parent="Necromancer" name="Vanilla" display_name="&lt;u&gt;Vanilla&lt;/u&gt;" description="Necromancer settings from the base game." color="46f0ff"/>
+
+</root>

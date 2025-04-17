@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+    <!--
+    <player_type
+            name="NecromancerEmpire"
+            is_partial_record="true"
+            deep_info_source="Np_NecromancerEmpireFactionDeepInfo"
+            />
+
+    <player_type
+            name="NecromancerSidekick"
+            is_partial_record="true"
+            deep_info_source="Np_NecromancerEmpireFactionDeepInfo"
+            />
+    -->
+
+</root>

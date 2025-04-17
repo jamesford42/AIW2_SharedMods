@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+    <!-- #region Skeleton -->
+	<entity	name="SkeletonWarriorHome"
+			is_partial_record="true"
+
+            fleet_design_templates_i_always_grant="SkeletonWarriorHomeDesign"
+            ship_type_name_to_grant_more_of_in_custom_fleet="∅"
+            ship_type_count_to_grant_more_of_in_custom_fleet="0"
+			>
+        <data_extension
+                name="DLC3"
+                skeleton_tag="∅"
+                skeleton_type_percent="0"
+                skeleton_cap_increase="0"
+                />
+	</entity>
+
+	<entity	name="SkeletonArcherHome"
+            is_partial_record="true"
+
+            fleet_design_templates_i_always_grant="SkeletonArcherHomeDesign"
+            ship_type_name_to_grant_more_of_in_custom_fleet="∅"
+            ship_type_count_to_grant_more_of_in_custom_fleet="0"
+			>
+        <data_extension
+                name="DLC3"
+                skeleton_tag="∅"
+                skeleton_type_percent="0"
+                skeleton_cap_increase="0"
+                />
+	</entity>
+
+	<entity	name="SkeletonDetonatorHome"
+            is_partial_record="true"
+
+            fleet_design_templates_i_always_grant="SkeletonDetonatorHomeDesign"
+            ship_type_name_to_grant_more_of_in_custom_fleet="∅"
+            ship_type_count_to_grant_more_of_in_custom_fleet="0"
+			>
+        <data_extension
+                name="DLC3"
+                skeleton_tag="∅"
+                skeleton_type_percent="0"
+                skeleton_cap_increase="0"
+                />
+	</entity>
+
+	<entity	name="SkeletonMageHome"
+            is_partial_record="true"
+
+            fleet_design_templates_i_always_grant="SkeletonMageHomeDesign"
+            ship_type_name_to_grant_more_of_in_custom_fleet="∅"
+            ship_type_count_to_grant_more_of_in_custom_fleet="0"
+			>
+        <data_extension
+                name="DLC3"
+                skeleton_tag="∅"
+                skeleton_type_percent="0"
+                skeleton_cap_increase="0"
+                />
+	</entity>
+
+	<entity	name="SkeletonLordHome"
+            is_partial_record="true"
+
+            fleet_design_templates_i_always_grant="SkeletonLordHomeDesign"
+            ship_type_name_to_grant_more_of_in_custom_fleet="∅"
+            ship_type_count_to_grant_more_of_in_custom_fleet="0"
+			>
+        <data_extension
+                name="DLC3"
+                skeleton_tag="∅"
+                skeleton_type_percent="0"
+                skeleton_cap_increase="0"
+                />
+	</entity>	
+    <!-- #endregion -->
+
+    <!-- #region Wight -->
+	<entity name="PossessedWightHome" 
+            is_partial_record="true"
+
+			fleet_design_templates_i_always_grant="PossessedWightHomeDesign"
+            ship_type_name_to_grant_more_of_in_custom_fleet="∅"
+            ship_type_count_to_grant_more_of_in_custom_fleet="0"
+	        >
+        <data_extension name="DLC3"
+						wight_tag="∅"
+						wight_type_percent="0"
+						wight_cap_increase="0"/>
+    </entity>
+
+	<entity name="InfectiousWightHome"
+            is_partial_record="true"
+
+			fleet_design_templates_i_always_grant="InfectiousWightHomeDesign"
+            ship_type_name_to_grant_more_of_in_custom_fleet="∅"
+            ship_type_count_to_grant_more_of_in_custom_fleet="0"
+	        >
+        <data_extension name="DLC3"
+						wight_tag="∅"
+						wight_type_percent="0"
+						wight_cap_increase="0"/>
+    </entity>
+
+	<entity name="RavenousWightHome"
+            is_partial_record="true"
+
+			fleet_design_templates_i_always_grant="RavenousWightHomeDesign"
+            ship_type_name_to_grant_more_of_in_custom_fleet="∅"
+            ship_type_count_to_grant_more_of_in_custom_fleet="0"
+	        >
+        <data_extension name="DLC3"
+						wight_tag="∅"
+						wight_type_percent="0"
+						wight_cap_increase="0"/>
+    </entity>
+
+	<entity	name="SpectralWightHome"
+            is_partial_record="true"
+
+			fleet_design_templates_i_always_grant="SpectralWightHomeDesign"
+            ship_type_name_to_grant_more_of_in_custom_fleet="∅"
+            ship_type_count_to_grant_more_of_in_custom_fleet="0"
+	        >
+        <data_extension name="DLC3"
+						wight_tag="∅"
+						wight_type_percent="0"
+						wight_cap_increase="0"/>
+	</entity>
+
+	<entity	name="VengefulWightHome"
+            is_partial_record="true"
+
+			fleet_design_templates_i_always_grant="VengefulWightHomeDesign"
+            ship_type_name_to_grant_more_of_in_custom_fleet="∅"
+            ship_type_count_to_grant_more_of_in_custom_fleet="0"
+	        >
+        <data_extension name="DLC3"
+						wight_tag="∅"
+						wight_type_percent="0"
+						wight_cap_increase="0"/>
+	</entity>
+    <!-- #endregion -->
+
+    <!-- #region Mummy -->
+    <entity name="RoyalMummyHome" 
+            is_partial_record="true"
+
+			fleet_design_templates_i_always_grant="RoyalMummyHomeDesign"
+            ship_type_name_to_grant_more_of_in_custom_fleet="∅"
+            ship_type_count_to_grant_more_of_in_custom_fleet="0"
+	        >
+      <data_extension name="DLC3"
+		      mummy_tag="∅"
+		      mummy_type_percent="0"
+		      />
+    </entity>
+
+	<entity name="DecayingMummyHome"
+            is_partial_record="true"
+
+			fleet_design_templates_i_always_grant="DecayingMummyHomeDesign"
+            ship_type_name_to_grant_more_of_in_custom_fleet="∅"
+            ship_type_count_to_grant_more_of_in_custom_fleet="0"
+	        >
+      <data_extension name="DLC3"
+		      mummy_tag="∅"
+		      mummy_type_percent="0"
+		      />
+    </entity>
+
+	<entity name="WitheredMummyHome"
+            is_partial_record="true"
+
+			fleet_design_templates_i_always_grant="WitheredMummyHomeDesign"
+            ship_type_name_to_grant_more_of_in_custom_fleet="∅"
+            ship_type_count_to_grant_more_of_in_custom_fleet="0"
+	        >
+      <data_extension name="DLC3"
+		      mummy_tag="∅"
+		      mummy_type_percent="0"
+		      />
+    </entity>
+    <!-- #endregion -->
+
+	<entity	name="LifeForceTotem"
+			is_partial_record="true"
+			city_socket_cost="1"
+			/>
+
+	<!-- Ghasts -->
+	<entity	name="NecromancerCatacomb"
+			is_partial_record="true"
+			city_socket_cost="1"
+			base_galaxy_wide_cap_for_players_constructing="0"
+			galaxy_wide_cap_match_string="NecromancerCatacomb"
+			/>
+
+	<!-- Draugrs -->
+	<entity	name="NecromancerMansion"
+			is_partial_record="true"
+			city_socket_cost="1"
+			base_galaxy_wide_cap_for_players_constructing="0"
+			galaxy_wide_cap_match_string="NecromancerMansion"
+			/>
+
+	<!-- Igors -->
+	<entity	name="NecromancerMorgue"
+			is_partial_record="true"
+			ship_type_count_to_grant_more_of_in_custom_fleet="2"
+			base_galaxy_wide_cap_for_players_constructing="0"
+			galaxy_wide_cap_match_string="NecromancerMorgue"
+			/>
+
+	<!-- Specters -->
+	<entity	name="NecromancerTomb"
+			is_partial_record="true"
+			base_galaxy_wide_cap_for_players_constructing="0"
+			galaxy_wide_cap_match_string="NecromancerTomb"
+			/>
+
+	<!-- Revenants -->
+	<entity name="NecromancerMausoleum" 
+			is_partial_record="true"               
+			base_galaxy_wide_cap_for_players_constructing="0"
+			galaxy_wide_cap_match_string="NecromancerMausoleum"
+			/>
+
+	<!-- Banshee -->
+	<entity name="NecromancerGraveyard"
+			is_partial_record="true"
+			base_galaxy_wide_cap_for_players_constructing="0"
+			galaxy_wide_cap_match_string="NecromancerGraveyard"
+	        />
+
+</root>

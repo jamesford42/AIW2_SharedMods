@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+      <item
+                  name="RiftHack"
+                  is_partial_record="true"
+
+                  dll_name="NecroParty" type_name="NecroParty.Np_Hacking_RiftHack" 
+
+                  aip_on_completion="0"
+                  cost_in_hacking_points="0"
+                  have_sidebar_request_hacking_point_cost_range="true"
+                  />
+
+      <item
+                  name="CorruptCastle"
+                  is_partial_record="true"
+
+                  hacking_points_against_this_faction_percentage_recorded_modifer="0.5"
+                  />
+
+      <item
+                  name="TransformNecromancerFlagship"
+                  is_partial_record="true"
+
+                  cost_in_hacking_points="0"
+                  cost_in_resource_one="0"
+                  />
+
+</root>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+    <entity
+            name="TemplarHerald"
+            is_partial_record="true"
+
+            draw_in_galaxy_view="true"
+            >
+    </entity>
+
+    <entity
+            name="TemplarProphet"
+            is_partial_record="true"
+
+            draw_in_galaxy_view="true"
+            >
+    </entity>
+
+    <entity
+            name="TemplarHarbinger"
+            is_partial_record="true"
+
+            draw_in_galaxy_view="true"
+            >
+    </entity>
+
+</root>

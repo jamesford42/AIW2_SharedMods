@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+    <!-- #region Skeleton -->
+	<entity	name="BaseSkeleton"
+			is_partial_record="true"
+
+            display_name="Skeleton Summon"
+            display_name_for_sidebar="Skeleton S"
+
+            no_explicit_cap="false" is_disallowed_from_getting_any_ship_cap_bonuses_when_in_fleets="true"
+            cannot_actually_be_built_builds_self_indirectly="true"
+            custom_NecromancyType = "Skeleton"
+            custom_NecromancyIsBasic = "true"
+
+            tech_upgrades_that_benefit_me="SkeletonWeapon"
+    />
+    
+    <entity name="SkeletonAttritioner"
+            is_partial_record="true"
+
+            display_name="Skeleton Weak Summon"
+            display_name_for_sidebar="Skeleton Weak S"
+            no_explicit_cap="true" is_disallowed_from_getting_any_ship_cap_bonuses_when_in_fleets="true"
+            cannot_actually_be_built_builds_self_indirectly="true"
+            custom_NecromancyType="∅"
+            custom_NecromancyIsBasic = "false"
+            custom_NecromancyIsWeak = "true"
+            />
+
+    <entity	name="SkeletonWarrior"
+			is_partial_record="true"
+
+            display_name="Skeleton Warrior Summon"
+            display_name_for_sidebar="Skeleton Warrior S"
+
+            no_explicit_cap="false"
+            cannot_actually_be_built_builds_self_indirectly="true"
+            custom_NecromancyType = "Skeleton"
+            custom_NecromancyIsBasic = "false"
+
+            tech_upgrades_that_benefit_me="SkeletonWarriorWeapon,SkeletonWeapon"
+    />
+
+    <entity	name="SkeletonArcher"
+			is_partial_record="true"
+
+            display_name="Skeleton Archer Summon"
+            display_name_for_sidebar="Skeleton Archer S"
+
+            no_explicit_cap="false"
+            cannot_actually_be_built_builds_self_indirectly="true"
+            custom_NecromancyType = "Skeleton"
+            custom_NecromancyIsBasic = "false"
+
+            tech_upgrades_that_benefit_me="SkeletonWarriorWeapon,SkeletonWeapon"
+    />
+
+    <entity	name="SkeletonDetonator"
+			is_partial_record="true"
+
+            display_name="Skeleton Rogue Summon"
+            display_name_for_sidebar="Skeleton Rogue S"
+
+            no_explicit_cap="false"
+            cannot_actually_be_built_builds_self_indirectly="true"
+            custom_NecromancyType = "Skeleton"
+            custom_NecromancyIsBasic = "false"
+
+            tech_upgrades_that_benefit_me="SkeletonWarriorWeapon,SkeletonWeapon"
+    />
+
+    <entity	name="SkeletonMage"
+			is_partial_record="true"
+
+            display_name="Skeleton Mage Summon"
+            display_name_for_sidebar="Skeleton Mage S"
+
+            no_explicit_cap="false"
+            cannot_actually_be_built_builds_self_indirectly="true"
+            custom_NecromancyType = "Skeleton"
+            custom_NecromancyIsBasic = "false"
+
+            tech_upgrades_that_benefit_me="SkeletonWarriorWeapon,SkeletonWeapon"
+    />
+
+    <entity	name="SkeletonLord"
+			is_partial_record="true"
+
+            display_name="Skeleton Lord"
+            display_name_for_sidebar="Skeleton Lord S"
+
+            no_explicit_cap="false"
+            cannot_actually_be_built_builds_self_indirectly="true"
+            custom_NecromancyType = "Skeleton"
+            custom_NecromancyIsBasic = "false"
+
+            tech_upgrades_that_benefit_me="SkeletonWarriorWeapon,SkeletonWeapon"
+    />
+
+    
+    <entity	name="SkeletonWarriorBodyguard"
+			is_partial_record="true"
+
+            display_name="Skeleton Warrior"
+            display_name_for_sidebar="Skeleton Warrior"
+
+            no_explicit_cap="false"
+            cannot_actually_be_built_builds_self_indirectly="false"
+            custom_NecromancyType = "∅"
+            custom_NecromancyIsBodyguard = "true"
+            custom_NecromancyIsBasic = "false"
+
+            tech_upgrades_that_benefit_me="SkeletonWarriorWeapon,SkeletonWeapon"
+    />
+
+    <entity	name="SkeletonArcherBodyguard"
+			is_partial_record="true"
+
+            display_name="Skeleton Archer"
+            display_name_for_sidebar="Skeleton Archer"
+
+            no_explicit_cap="false"
+            cannot_actually_be_built_builds_self_indirectly="false"
+            custom_NecromancyType = "∅"
+            custom_NecromancyIsBodyguard = "true"
+            custom_NecromancyIsBasic = "false"
+
+            tech_upgrades_that_benefit_me="SkeletonWarriorWeapon,SkeletonWeapon"
+    />
+    
+    <entity	name="SkeletonDetonatorBodyguard"
+			is_partial_record="true"
+
+            display_name="Skeleton Rogue"
+            display_name_for_sidebar="Skeleton Rogue"
+
+            no_explicit_cap="false"
+            cannot_actually_be_built_builds_self_indirectly="false"
+            custom_NecromancyType = "∅"
+            custom_NecromancyIsBodyguard = "true"
+            custom_NecromancyIsBasic = "false"
+
+            tech_upgrades_that_benefit_me="SkeletonWarriorWeapon,SkeletonWeapon"
+    />
+
+    <entity	name="SkeletonMageBodyguard"
+			is_partial_record="true"
+
+            display_name="Skeleton Mage"
+            display_name_for_sidebar="Skeleton Mage"
+
+            no_explicit_cap="false"
+            cannot_actually_be_built_builds_self_indirectly="false"
+            custom_NecromancyType = "∅"
+            custom_NecromancyIsBodyguard = "true"
+            custom_NecromancyIsBasic = "false"
+
+            tech_upgrades_that_benefit_me="SkeletonWarriorWeapon,SkeletonWeapon"
+    />
+
+    <entity	name="SkeletonLordBodyguard"
+			is_partial_record="true"
+
+            display_name="Skeleton Lord"
+            display_name_for_sidebar="Skeleton Lord"
+
+            no_explicit_cap="false" is_disallowed_from_getting_any_ship_cap_bonuses_when_in_fleets="true"
+            cannot_actually_be_built_builds_self_indirectly="false"
+            custom_NecromancyType = "∅"
+            custom_NecromancyIsBodyguard = "true"
+            custom_NecromancyIsBasic = "false"
+
+            tech_upgrades_that_benefit_me="SkeletonWarriorWeapon,SkeletonWeapon"
+    />
+    <!-- #endregion -->
+
+    <!-- #region Wight -->
+    <entity name="BaseWight"
+            is_partial_record="true"
+
+            display_name="Wight Summon"
+            display_name_for_sidebar="Wight S"
+
+            no_explicit_cap="false" is_disallowed_from_getting_any_ship_cap_bonuses_when_in_fleets="true"
+            cannot_actually_be_built_builds_self_indirectly="true"
+            custom_NecromancyType = "Wight"
+            custom_NecromancyIsBasic = "true"
+
+            tech_upgrades_that_benefit_me="WightWeapon"
+    />
+
+    <entity name="WightAttritioner"
+            is_partial_record="true"
+
+            display_name="Wight Weak Summon"
+            display_name_for_sidebar="Wight Weak S"
+
+            no_explicit_cap="true" is_disallowed_from_getting_any_ship_cap_bonuses_when_in_fleets="true"
+            cannot_actually_be_built_builds_self_indirectly="true"
+            custom_NecromancyType = "Wight"
+            custom_NecromancyIsWeak = "true"
+            custom_NecromancyIsBasic = "false"
+
+            tech_upgrades_that_benefit_me="WightWeapon"
+    />
+    
+    <entity name="RavenousWight" 
+            is_partial_record="true"
+
+            display_name="Wight Ravenous Summon"
+            display_name_for_sidebar="Wight Ravenous S"
+
+            no_explicit_cap="false" is_disallowed_from_getting_any_ship_cap_bonuses_when_in_fleets="true"
+            cannot_actually_be_built_builds_self_indirectly="true"
+            custom_NecromancyType = "Wight"
+            custom_NecromancyIsBasic = "false"
+
+            tech_upgrades_that_benefit_me="RavenousWightWeapon,WightWeapon"
+    />
+
+    <entity name="PossessedWight" 
+            is_partial_record="true"
+
+            display_name="Wight Possessed Summon"
+            display_name_for_sidebar="Wight Possessed S"
+
+            no_explicit_cap="false" is_disallowed_from_getting_any_ship_cap_bonuses_when_in_fleets="true"
+            cannot_actually_be_built_builds_self_indirectly="true"
+            custom_NecromancyType = "Wight"
+            custom_NecromancyIsBasic = "false"
+
+            tech_upgrades_that_benefit_me="PossessedWightWeapon,WightWeapon"
+    />
+
+    <entity name="InfectiousWight" 
+            is_partial_record="true"
+
+            display_name="Wight Infectious Summon"
+            display_name_for_sidebar="Wight Infectious S"
+
+            no_explicit_cap="false" is_disallowed_from_getting_any_ship_cap_bonuses_when_in_fleets="true"
+            cannot_actually_be_built_builds_self_indirectly="true"
+            custom_NecromancyType = "Wight"
+            custom_NecromancyIsBasic = "false"
+
+            tech_upgrades_that_benefit_me="InfectiousWightWeapon,WightWeapon"
+        />
+
+    <entity name="SpectralWight" 
+            is_partial_record="true"
+
+            display_name="Wight Spectral Summon"
+            display_name_for_sidebar="Wight Spectral S"
+
+            no_explicit_cap="false" is_disallowed_from_getting_any_ship_cap_bonuses_when_in_fleets="true"
+            cannot_actually_be_built_builds_self_indirectly="true"
+            custom_NecromancyType = "Wight"
+            custom_NecromancyIsBasic = "false"
+
+            tech_upgrades_that_benefit_me="SpectralWightWeapon,WightWeapon"
+        />
+
+    <entity name="VengefulWight" 
+            is_partial_record="true"
+
+            display_name="Wight Vengeful Summon"
+            display_name_for_sidebar="Wight Vengeful S"
+
+            no_explicit_cap="false" is_disallowed_from_getting_any_ship_cap_bonuses_when_in_fleets="true"
+            cannot_actually_be_built_builds_self_indirectly="true"
+            custom_NecromancyType = "Wight"
+            custom_NecromancyIsBasic = "false"
+
+            tech_upgrades_that_benefit_me="VengefulWightWeapon,WightWeapon"
+    />
+
+    <entity	name="RavenousWightBodyguard"
+			is_partial_record="true"
+
+            display_name="Wight Ravenous"
+            display_name_for_sidebar="Wight Ravenous"
+
+            no_explicit_cap="false" is_disallowed_from_getting_any_ship_cap_bonuses_when_in_fleets="true"
+            cannot_actually_be_built_builds_self_indirectly="false"
+            custom_NecromancyType = "∅"
+            custom_NecromancyIsBodyguard = "true"
+            custom_NecromancyIsBasic = "false"
+
+            tech_upgrades_that_benefit_me="RavenousWightWeapon,WightWeapon"
+    />
+    
+    <entity	name="PossessedWightBodyguard"
+			is_partial_record="true"
+
+            display_name="Wight Possessed"
+            display_name_for_sidebar="Wight Possessed"
+
+            no_explicit_cap="false" is_disallowed_from_getting_any_ship_cap_bonuses_when_in_fleets="true"
+            cannot_actually_be_built_builds_self_indirectly="false"
+            custom_NecromancyType = "∅"
+            custom_NecromancyIsBodyguard = "true"
+            custom_NecromancyIsBasic = "false"
+
+            tech_upgrades_that_benefit_me="PossessedWightWeapon,WightWeapon"
+    />
+
+    <entity	name="InfectiousWightBodyguard"
+			is_partial_record="true"
+
+            display_name="Wight Infectious"
+            display_name_for_sidebar="Wight Infectious"
+
+            no_explicit_cap="false" is_disallowed_from_getting_any_ship_cap_bonuses_when_in_fleets="true"
+            cannot_actually_be_built_builds_self_indirectly="false"
+            custom_NecromancyType = "∅"
+            custom_NecromancyIsBodyguard = "true"
+            custom_NecromancyIsBasic = "false"
+
+            tech_upgrades_that_benefit_me="InfectiousWightWeapon,WightWeapon"
+    />
+
+    <entity	name="SpectralWightBodyguard"
+			is_partial_record="true"
+
+            display_name="Wight Spectral"
+            display_name_for_sidebar="Wight Spectral"
+
+            no_explicit_cap="false" is_disallowed_from_getting_any_ship_cap_bonuses_when_in_fleets="true"
+            cannot_actually_be_built_builds_self_indirectly="false"
+            custom_NecromancyType = "∅"
+            custom_NecromancyIsBodyguard = "true"
+            custom_NecromancyIsBasic = "false"
+
+            tech_upgrades_that_benefit_me="SpectralWightWeapon,WightWeapon"
+    />
+
+    <entity	name="VengefulWightBodyguard"
+			is_partial_record="true"
+
+            display_name="Wight Vengeful"
+            display_name_for_sidebar="Wight Vengeful"
+
+            no_explicit_cap="false" is_disallowed_from_getting_any_ship_cap_bonuses_when_in_fleets="true"
+            cannot_actually_be_built_builds_self_indirectly="false"
+            custom_NecromancyType = "∅"
+            custom_NecromancyIsBodyguard = "true"
+            custom_NecromancyIsBasic = "false"
+
+            tech_upgrades_that_benefit_me="VengefulWightWeapon,WightWeapon"
+    />
+    <!-- #endregion -->
+
+    <!-- #region Mummy -->
+     <entity name="NecromancerMummy"
+            is_partial_record="true"
+
+            display_name="Mummy Summon"
+            display_name_for_sidebar="Mummy S"
+
+            no_explicit_cap="false" is_disallowed_from_getting_any_ship_cap_bonuses_when_in_fleets="true"
+            cannot_actually_be_built_builds_self_indirectly="true"
+            custom_NecromancyType = "Mummy"
+            custom_NecromancyIsBasic = "true"
+
+            tech_upgrades_that_benefit_me="MummyWeapon"
+    />
+
+    <entity name="RoyalMummy" 
+            is_partial_record="true"
+
+            display_name="Mummy Royal Summon"
+            display_name_for_sidebar="Mummy Royal S"
+
+            no_explicit_cap="false" is_disallowed_from_getting_any_ship_cap_bonuses_when_in_fleets="true"
+            cannot_actually_be_built_builds_self_indirectly="true"
+            custom_NecromancyType = "Mummy"
+            custom_NecromancyIsBasic = "false"
+
+            tech_upgrades_that_benefit_me="RoyalMummyWeapon,MummyWeapon"
+    />
+
+    <entity name="DecayingMummy" 
+            is_partial_record="true"
+
+            display_name="Mummy Decaying Summon"
+            display_name_for_sidebar="Mummy Decaying S"
+
+            no_explicit_cap="false" is_disallowed_from_getting_any_ship_cap_bonuses_when_in_fleets="true"
+            cannot_actually_be_built_builds_self_indirectly="true"
+            custom_NecromancyType = "Mummy"
+            custom_NecromancyIsBasic = "false"
+
+            tech_upgrades_that_benefit_me="DecayingMummyWeapon,MummyWeapon"
+    />
+
+    <entity name="WitheredMummy" 
+            is_partial_record="true"
+
+            display_name="Mummy Withered Summon"
+            display_name_for_sidebar="Mummy Withered S"
+
+            no_explicit_cap="false" is_disallowed_from_getting_any_ship_cap_bonuses_when_in_fleets="true"
+            cannot_actually_be_built_builds_self_indirectly="true"
+            custom_NecromancyType = "Mummy"
+            custom_NecromancyIsBasic = "false"
+
+            tech_upgrades_that_benefit_me="WitheredMummyWeapon,MummyWeapon"
+    />
+
+    <entity	name="RoyalMummyBodyguard"
+			is_partial_record="true"
+
+            display_name="Mummy Royal"
+            display_name_for_sidebar="Mummy Royal"
+
+            no_explicit_cap="false" is_disallowed_from_getting_any_ship_cap_bonuses_when_in_fleets="true"
+            cannot_actually_be_built_builds_self_indirectly="false"
+            custom_NecromancyType = "∅"
+            custom_NecromancyIsBodyguard = "true"
+            custom_NecromancyIsBasic = "false"
+
+            tech_upgrades_that_benefit_me="RoyalMummyWeapon,MummyWeapon"
+    />
+
+    <entity	name="DecayingMummyBodyguard"
+			is_partial_record="true"
+
+            display_name="Mummy Decaying"
+            display_name_for_sidebar="Mummy Decaying"
+
+            no_explicit_cap="false" is_disallowed_from_getting_any_ship_cap_bonuses_when_in_fleets="true"
+            cannot_actually_be_built_builds_self_indirectly="false"
+            custom_NecromancyType = "∅"
+            custom_NecromancyIsBodyguard = "true"
+            custom_NecromancyIsBasic = "false"
+
+            tech_upgrades_that_benefit_me="DecayingMummyWeapon,MummyWeapon"
+    />
+
+    <entity	name="WitheredMummyBodyguard"
+			is_partial_record="true"
+
+            display_name="Mummy Withered"
+            display_name_for_sidebar="Mummy Withered"
+
+            no_explicit_cap="false" is_disallowed_from_getting_any_ship_cap_bonuses_when_in_fleets="true"
+            cannot_actually_be_built_builds_self_indirectly="false"
+            custom_NecromancyType = "∅"
+            custom_NecromancyIsBodyguard = "true"
+            custom_NecromancyIsBasic = "false"
+
+            tech_upgrades_that_benefit_me="WitheredMummyWeapon,MummyWeapon"
+    />
+    <!-- #endregion -->
+
+</root>

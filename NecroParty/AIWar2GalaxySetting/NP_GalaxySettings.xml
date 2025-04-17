@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+    <!-- Necro Party -->
+
+    <galaxy_setting
+            category="Necromancer"
+            subcategory="NecroParty"
+            name="NecroFlagshipsMustBeUnique"
+            display_name="Flagships Must Be Unique"
+            type="BoolToggle"
+            default="true"
+            changeable_during_gameplay="true"
+            description="Normally when a Necromancer unlocks a new transformation, that allows any number of flagships of that type. If this setting is enabled, then instead there is a maximum of one flagship of any single type."
+            optional_dll_name="AIWarExternalCode" optional_type_name="Arcen.AIW2.External.GalaxySetting_Necromancer"
+            >
+    </galaxy_setting>
+
+    <galaxy_setting
+            category="Necromancer" 
+            subcategory="NecroParty"
+            name="TemplarRiftsToSeed"
+            display_name="Templar Rifts to Seed" type="CustomDropdownArbitraryOptions" 
+            arbitrary_options="0x,0.5x,0.75x,1x,1.25x,1.5x,1.75x,2x,2.5x,3x" default_option="1x"
+            description="The number of templar rifts to seed across the galaxy. If set to 0x rifts will instead spawn over time like vanilla necromancer."
+            optional_dll_name="AIWarExternalCode" optional_type_name="Arcen.AIW2.External.GalaxySetting_Necromancer"
+            >
+    </galaxy_setting>
+
+    
+    <!-- Vanilla -->
+
+    <galaxy_setting name="NecromancerSharkB" is_partial_record="true" subcategory="Vanilla"/>
+    <galaxy_setting name="NecromancerFlagshipCrippleCost" is_partial_record="true" subcategory="Vanilla"/>
+    <galaxy_setting name="BoringNecroNames" is_partial_record="true" subcategory="Vanilla"/>
+    <galaxy_setting name="CrippledFlagshipCanPracticeNecromancy" is_partial_record="true" subcategory="Vanilla"/>
+    <galaxy_setting name="ForgivingNecromancy" is_partial_record="true" subcategory="Vanilla"/>
+    <galaxy_setting name="SkeletonDecayInterval" is_partial_record="true" subcategory="Vanilla"/>
+    <galaxy_setting name="WightDecayInterval" is_partial_record="true" subcategory="Vanilla"/>
+    <galaxy_setting name="BonusNecromancerResources" is_partial_record="true" subcategory="Vanilla"/>
+    <galaxy_setting name="BonusNecromancerSockets" is_partial_record="true" subcategory="Vanilla"/>
+    <galaxy_setting name="BonusNecromancerRiftOptions" is_partial_record="true" subcategory="Vanilla"/>
+    <galaxy_setting name="NecromancerScarceResources" is_partial_record="true" subcategory="Vanilla"/>
+    <galaxy_setting name="NecromancerAutoLoad" is_partial_record="true" subcategory="Vanilla"/>
+    <galaxy_setting name="NecromancerAutoDefend" is_partial_record="true" subcategory="Vanilla"/>
+
+    <galaxy_setting
+            name="ZombiesGoToNecromancer"
+            required_mod_list="DysonSidekick"
+            is_partial_record="true"
+            category="Hidden"
+            >
+        <harshness_override
+                min_campaign_harshness_to_apply="0"
+                fixed_value="false"
+                />
+    </galaxy_setting>
+
+
+</root>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <!--- Necromancer -->
+
+    <journal
+            name="Np_Necromancer_Reminder"
+            sidebar_text="{color=#fefefe}Mod:{/color} {color=#a67cb2}Necro Party{/color}"
+            is_for_the_tips_tab="true"
+            can_record_another_copy_if_already_recorded_in_this_campaign="false"
+            text_replacement_related_faction_color="true"
+            full_text=
+"This mod makes dramatic gameplay changes for {color=#0BDA51}Necromancer{/color} players.
+
+Goal:
+More variety in winning strategies.
+Give less used mechanics and ships a purpose.
+Make each Necromancer game and galaxy feel more varied.
+
+Details:
+* {u}Templar Rifts{/u} are now {u}pre-seeded{/u} across the galaxy and do not spawn over time. You will discover what is available in the galaxy as you explore it and make best use of what is there. 
+* All lines and flagships have been tweaked to have a value appropriate to their cost—and could be all you can find anyway!"
+            />
+
+</root>

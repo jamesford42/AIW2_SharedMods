@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+    <setting
+            name="Np_LogLight"
+            category="Debug"
+            subcategory="GameplayLogging" 
+            display_name="NecroParty : Debug Logging (light)"
+            type="BoolToggle"
+            default="false"
+            description="For developer use."
+            />
+
+    <setting
+            name="Np_LogAll"
+            category="Debug"
+            subcategory="GameplayLogging" 
+            display_name="NecroParty : Debug Logging (heavy)"
+            type="BoolToggle"
+            default="false"
+            description="For developer use. Will 100% spam your log and may reduce performance."
+            />
+
+</root>

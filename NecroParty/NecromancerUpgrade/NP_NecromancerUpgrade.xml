@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+        <record
+                        name="GrantNecromancerEssence"
+                        is_partial_record="true"
+
+                        AdditionalAIPCost="0"
+                        AdditionalHapCost="0"
+                        AdditionalEssenceCost="0"
+
+                        custom_Seeding_Weight="10"
+                        />
+
+        <record
+                        name="UnlockSkeletonWarrior"
+                        is_partial_record="true"
+
+                        AdditionalAIPCost="3"
+                        AdditionalHapCost="10"
+                        AdditionalEssenceCost="0"
+
+                        custom_Seeding_Group="Tier1_Skeleton"
+                        custom_Seeding_Weight="100"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="1"
+                        custom_Seeding_Dist_Max="3"
+                        custom_Seeding_Dist_Bias="-1"
+                        />
+
+        <record
+                        name="UnlockSkeletonArcher"
+                        is_partial_record="true"
+                        
+                        AdditionalAIPCost="3"
+                        AdditionalHapCost="10"
+                        AdditionalEssenceCost="0"
+
+                        custom_Seeding_Group="Tier1_Skeleton"
+                        custom_Seeding_Weight="100"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="1"
+                        custom_Seeding_Dist_Max="-1"
+                        custom_Seeding_Dist_Bias="-1"
+                        />
+
+        <record
+                        name="UnlockSkeletonDetonator"
+                        is_partial_record="true"
+                        
+                        AdditionalAIPCost="3"
+                        AdditionalHapCost="10"
+                        AdditionalEssenceCost="0"
+
+                        custom_Seeding_Group="Tier1_Skeleton"
+                        custom_Seeding_Weight="100"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="1"
+                        custom_Seeding_Dist_Max="-1"
+                        custom_Seeding_Dist_Bias="-1"
+                        />
+
+        <record
+                        name="UnlockSkeletonMage"
+                        is_partial_record="true"
+
+                        AdditionalAIPCost="6"
+                        AdditionalHapCost="20"
+                        AdditionalEssenceCost="0"
+
+                        custom_Seeding_Group="Tier2_Skeleton"
+                        custom_Seeding_Weight="50"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="5"
+                        custom_Seeding_Dist_Max="-1"
+                        custom_Seeding_Dist_Bias="2"
+                        />
+        <record
+                        name="UnlockSkeletonLord"
+                        is_partial_record="true"
+
+                        AdditionalAIPCost="6"
+                        AdditionalHapCost="15"
+                        AdditionalEssenceCost="0"
+
+                        custom_Seeding_Group="Tier2_Skeleton"
+                        custom_Seeding_Weight="50"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="5"
+                        custom_Seeding_Dist_Max="-1"
+                        custom_Seeding_Dist_Bias="2"
+                        />
+
+        <record
+                        name="UnlockRavenousWight"
+                        is_partial_record="true"
+                        
+                        AdditionalAIPCost="4"
+                        AdditionalHapCost="12"
+                        AdditionalEssenceCost="0"
+
+                        custom_Seeding_Group="Tier1_Wight"
+                        custom_Seeding_Weight="100"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="1"
+                        custom_Seeding_Dist_Max="-1"
+                        />
+
+        <record
+                        name="UnlockPossessedWight"
+                        is_partial_record="true"
+                        
+                        AdditionalAIPCost="4"
+                        AdditionalHapCost="12"
+                        AdditionalEssenceCost="0"
+
+                        custom_Seeding_Group="Tier1_Wight"
+                        custom_Seeding_Weight="100"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="1"
+                        custom_Seeding_Dist_Max="-1"
+                        />
+
+        <record
+                        name="UnlockInfectiousWight"
+                        is_partial_record="true"
+                        AdditionalAIPCost="4"
+
+                        custom_Seeding_Group="Tier1_Wight"
+                        custom_Seeding_Weight="100"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="1"
+                        custom_Seeding_Dist_Max="-1"
+                        />
+
+        <record
+                        name="UnlockSpectralWight"
+                        is_partial_record="true"
+                        
+                        AdditionalAIPCost="5"
+                        AdditionalHapCost="15"
+                        AdditionalEssenceCost="0"
+
+                        custom_Seeding_Group="Tier2_Wight"
+                        custom_Seeding_Weight="25"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="5"
+                        custom_Seeding_Dist_Max="-1"
+                        custom_Seeding_Dist_Bias="1"
+                        />
+
+        <record
+                        name="UnlockVengefulWight"
+                        is_partial_record="true"
+                        
+                        AdditionalAIPCost="6"
+                        AdditionalHapCost="20"
+                        AdditionalEssenceCost="0"
+
+                        custom_Seeding_Group="Tier3_Wight"
+                        custom_Seeding_Weight="25"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="5"
+                        custom_Seeding_Dist_Max="-1"
+                        custom_Seeding_Dist_Bias="2"
+                        />
+
+        <record
+                        name="UnlockRoyalMummy"
+                        is_partial_record="true"
+
+                        AdditionalAIPCost="8"
+                        AdditionalHapCost="20"
+                        AdditionalEssenceCost="0"
+
+                        custom_Seeding_Group="Mummy"
+                        custom_Seeding_Weight="50"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="5"
+                        custom_Seeding_Dist_Max="-1"
+                        custom_Seeding_Dist_Bias="2"
+                        />
+        <record
+                        name="UnlockDecayingMummy"
+                        is_partial_record="true"
+                        
+                        AdditionalAIPCost="8"
+                        AdditionalHapCost="20"
+                        AdditionalEssenceCost="0"
+
+                        custom_Seeding_Group="Mummy"
+                        custom_Seeding_Weight="50"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="5"
+                        custom_Seeding_Dist_Max="-1"
+                        custom_Seeding_Dist_Bias="2"
+                        />
+
+        <record
+                        name="UnlockWitheredMummy"
+                        is_partial_record="true"
+                        
+                        AdditionalAIPCost="8"
+                        AdditionalHapCost="20"
+                        AdditionalEssenceCost="0"
+                        
+                        custom_Seeding_Group="Mummy"
+                        custom_Seeding_Weight="50"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="5"
+                        custom_Seeding_Dist_Max="-1"
+                        custom_Seeding_Dist_Bias="2"
+                        />
+
+        <!-- Spectre -->
+        <record
+                        name="UnlockSpectre"
+                        is_partial_record="true"
+                        
+                        AdditionalAIPCost="4"
+                        AdditionalHapCost="10"
+                        AdditionalEssenceCost="0"
+                        
+                        custom_Seeding_Group="Tier1_Construct"
+                        custom_Seeding_Weight="100"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="3"
+                        custom_Seeding_Dist_Max="-1"
+                        />
+
+        <!-- Ghast -->
+        <record
+                        name="UnlockGhast"
+                        is_partial_record="true"
+                        
+                        AdditionalAIPCost="4"
+                        AdditionalHapCost="10"
+                        AdditionalEssenceCost="0"
+                        
+                        custom_Seeding_Group="Tier1_Construct"
+                        custom_Seeding_Weight="100"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="3"
+                        custom_Seeding_Dist_Max="-1"
+                        />
+
+        <!-- Draugrs -->
+        <record
+                        name="UnlockMansion"
+                        is_partial_record="true"
+                        
+                        AdditionalAIPCost="4"
+                        AdditionalHapCost="10"
+                        AdditionalEssenceCost="0"
+                        
+                        custom_Seeding_Group="Tier1_Construct"
+                        custom_Seeding_Weight="100"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="3"
+                        custom_Seeding_Dist_Max="-1"
+                        />
+
+        <!-- Banshees -->
+        <record
+                        name="UnlockGraveyard"
+                        is_partial_record="true"
+                        
+                        AdditionalAIPCost="4"
+                        AdditionalHapCost="10"
+                        AdditionalEssenceCost="0"
+                        
+                        custom_Seeding_Group="Tier1_Construct"
+                        custom_Seeding_Weight="100"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="3"
+                        custom_Seeding_Dist_Max="-1"
+                        />
+
+        <!-- Igor -->
+        <record
+                        name="UnlockMorgue"
+                        is_partial_record="true"
+                        
+                        AdditionalAIPCost="4"
+                        AdditionalHapCost="10"
+                        AdditionalEssenceCost="0"
+
+                        custom_Seeding_Group="Tier1_Construct"
+                        custom_Seeding_Weight="100"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="3"
+                        custom_Seeding_Dist_Max="-1"
+                        />
+
+        <!-- Ikiryo -->
+        <record
+                        name="UnlockEffigy"
+                        is_partial_record="true"
+                        
+                        AdditionalAIPCost="4"
+                        AdditionalHapCost="10"
+                        AdditionalEssenceCost="0"
+
+                        custom_Seeding_Group="Tier1_Construct"
+                        custom_Seeding_Weight="100"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="3"
+                        custom_Seeding_Dist_Max="-1"
+                        />
+
+        <!-- Revenant -->
+        <record
+                        name="UnlockMausoleum"
+                        is_partial_record="true"
+                        
+                        AdditionalAIPCost="8"
+                        AdditionalHapCost="20"
+                        AdditionalEssenceCost="0"
+
+                        custom_Seeding_Group="Tier2_Construct"
+                        custom_Seeding_Weight="50"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="5"
+                        custom_Seeding_Dist_Max="-1"
+                        />
+
+        <!-- BoneDragon -->
+        <record
+                        name="UnlockLaboratory"
+                        is_partial_record="true"
+                        
+                        AdditionalAIPCost="10"
+                        AdditionalHapCost="20"
+                        AdditionalEssenceCost="0"
+
+                        custom_Seeding_Group="Tier2_Construct"
+                        custom_Seeding_Weight="50"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="7"
+                        custom_Seeding_Dist_Max="-1"
+                        />
+
+        <!-- Cap Increases -->
+
+        <record
+                        name="IncreaseBaseSkeletonCapForFleet"
+                        is_partial_record="true"
+                        
+                        AdditionalAIPCost="1"
+                        AdditionalHapCost="10"
+                        AdditionalEssenceCost="0"
+
+                        custom_Seeding_Group="CapIncrease"
+                        custom_Seeding_Weight="10"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="5"
+                        custom_Seeding_Dist_Max="-1"
+                        />
+
+        <record
+                        name="IncreaseBaseWightCapForFleet"
+                        is_partial_record="true"
+
+                        AdditionalAIPCost="1"
+                        AdditionalHapCost="10"
+                        AdditionalEssenceCost="0"
+
+                        custom_Seeding_Group="CapIncrease"
+                        custom_Seeding_Weight="10"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="5"
+                        custom_Seeding_Dist_Max="-1"
+                        />
+
+        <!-- Skeleton Bodyguards -->
+        
+        <record
+                        name="IncreaseSkeletonWarriorCap"
+                        is_partial_record="true"
+
+                        AdditionalAIPCost="1"
+                        AdditionalHapCost="7"
+                        AdditionalEssenceCost="0"
+                        
+                        custom_Seeding_Group="Tier1_Skeleton_Bodyguard"
+                        custom_Seeding_Weight="10"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="7"
+                        custom_Seeding_Dist_Max="-1"
+                        />
+
+        <record
+                        name="IncreaseSkeletonArcherCap"
+                        is_partial_record="true"
+                        
+                        AdditionalAIPCost="1"
+                        AdditionalHapCost="7"
+                        AdditionalEssenceCost="0"
+                        
+                        custom_Seeding_Group="Tier1_Skeleton_Bodyguard"
+                        custom_Seeding_Weight="10"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="7"
+                        custom_Seeding_Dist_Max="-1"
+                        />
+
+        <record
+                        name="IncreaseSkeletonDetonatorBodyguardCap"
+                        is_partial_record="true"
+                        
+                        AdditionalAIPCost="1"
+                        AdditionalHapCost="7"
+                        AdditionalEssenceCost="0"
+
+                        custom_Seeding_Group="Tier1_Skeleton_Bodyguard"
+                        custom_Seeding_Weight="10"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="7"
+                        custom_Seeding_Dist_Max="-1"
+                        />
+
+        <record
+                        name="IncreaseSkeletonMageBodyguardCap"
+                        is_partial_record="true"
+                        
+                        AdditionalAIPCost="1"
+                        AdditionalHapCost="12"
+                        AdditionalEssenceCost="0"
+
+                        custom_Seeding_Group="Tier2_Skeleton_Bodyguard"
+                        custom_Seeding_Weight="10"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="7"
+                        custom_Seeding_Dist_Max="-1"
+                        />
+
+        <record
+                        name="IncreaseSkeletonLordBodyguardCap"
+                        is_partial_record="true"
+
+                        AdditionalAIPCost="1"
+                        AdditionalHapCost="7"
+                        AdditionalEssenceCost="0"
+                        
+                        custom_Seeding_Group="Tier2_Skeleton_Bodyguard"
+                        custom_Seeding_Weight="10"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="7"
+                        custom_Seeding_Dist_Max="-1"
+                        />
+
+        <!-- Wight Bodyguards -->
+
+        <record
+                        name="IncreaseRavenousWightBodyguardCap"
+                        is_partial_record="true"
+                        
+                        AdditionalAIPCost="1"
+                        AdditionalHapCost="7"
+                        AdditionalEssenceCost="0"
+                        
+                        custom_Seeding_Group="Tier1_Wight_Bodyguard"
+                        custom_Seeding_Weight="10"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="7"
+                        custom_Seeding_Dist_Max="-1"
+                        />
+
+        <record
+                        name="IncreasePossessedWightBodyguardCap"
+                        is_partial_record="true"
+                        
+                        AdditionalAIPCost="1"
+                        AdditionalHapCost="7"
+                        AdditionalEssenceCost="0"
+                        
+                        custom_Seeding_Group="Tier1_Wight_Bodyguard"
+                        custom_Seeding_Weight="10"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="7"
+                        custom_Seeding_Dist_Max="-1"
+                        />
+
+        <record
+                        name="IncreaseInfectiousWightBodyguardCap"
+                        is_partial_record="true"
+                        
+                        AdditionalAIPCost="1"
+                        AdditionalHapCost="7"
+                        AdditionalEssenceCost="0"
+                        
+                        custom_Seeding_Group="Tier1_Wight_Bodyguard"
+                        custom_Seeding_Weight="10"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="7"
+                        custom_Seeding_Dist_Max="-1"
+                        />
+
+        <record
+                        name="IncreaseSpectralWightBodyguardCap"
+                        is_partial_record="true"
+                        
+                        AdditionalAIPCost="1"
+                        AdditionalHapCost="7"
+                        AdditionalEssenceCost="0"
+                        
+                        custom_Seeding_Group="Tier2_Wight_Bodyguard"
+                        custom_Seeding_Weight="5"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="7"
+                        custom_Seeding_Dist_Max="-1"
+                        />
+
+        <record
+                        name="IncreaseVengefulWightBodyguardCap"
+                        is_partial_record="true"
+                        
+                        AdditionalAIPCost="1"
+                        AdditionalHapCost="7"
+                        AdditionalEssenceCost="0"
+                        
+                        custom_Seeding_Group="Tier3_Wight_Bodyguard"
+                        custom_Seeding_Weight="5"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="2"
+                        custom_Seeding_Dist_Min="7"
+                        custom_Seeding_Dist_Max="-1"
+                        />
+
+        <!-- Flagships (Rift) -->
+
+        <record
+                        name="ClaimBlaster"
+                        is_partial_record="true"
+
+                        short_name="Claim Terrorizing Flagship"
+
+                        MinFlagshipLevel="0"
+
+                        AdditionalAIPCost="5"
+                        AdditionalHapCost="10"
+                        AdditionalEssenceCost="20"
+                        BlueprintTransformCostInHacking="0"
+
+                        custom_Seeding_Group="Flagship"
+                        custom_Seeding_Weight="300"
+                        custom_Seeding_Weight_Div_Per_Group="5"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="1"
+                        custom_Seeding_Dist_Min="3"
+                        custom_Seeding_Dist_Max="7"
+                        />
+
+        <record
+                        name="ClaimTank"
+                        is_partial_record="true"
+                        
+                        short_name="Claim Unyielding Flagship"
+
+                        MinFlagshipLevel="0"
+
+                        AdditionalAIPCost="5"
+                        AdditionalHapCost="10"
+                        AdditionalEssenceCost="20"
+                        BlueprintTransformCostInHacking="0"
+                        
+                        custom_Seeding_Group="Flagship"
+                        custom_Seeding_Weight="300"
+                        custom_Seeding_Weight_Div_Per_Group="5"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="1"
+                        custom_Seeding_Dist_Min="3"
+                        custom_Seeding_Dist_Max="7"
+                        />
+
+        <record
+                        name="ClaimHarrowingFlagship"
+                        is_partial_record="true"
+
+                        short_name="Claim Harrowing Flagship"
+
+                        MinFlagshipLevel="0"
+
+                        AdditionalAIPCost="5"
+                        AdditionalHapCost="10"
+                        AdditionalEssenceCost="20"
+                        BlueprintTransformCostInHacking="0"
+                        
+                        custom_Seeding_Group="Flagship"
+                        custom_Seeding_Weight="300"
+                        custom_Seeding_Weight_Div_Per_Group="5"
+                        custom_Seeding_Min="0"
+                        custom_Seeding_Max="1"
+                        custom_Seeding_Dist_Min="3"
+                        custom_Seeding_Dist_Max="7"
+                        />
+
+        <!-- Flagships (Elderling) -->
+
+        <record
+                        name="ClaimSlothfulFlagship"
+                        is_partial_record="true"
+
+                        short_name="Claim Slothful Flagship"
+
+                        MinFlagshipLevel="0"
+
+                        AdditionalAIPCost="5"
+                        AdditionalHapCost="10"
+                        AdditionalEssenceCost="20"
+                        BlueprintTransformCostInHacking="0"
+                        />
+
+        <record
+                        name="ClaimWrathfulFlagship"
+                        is_partial_record="true"
+                        
+                        short_name="Claim Wrathful Flagship"
+
+                        MinFlagshipLevel="0"
+
+                        AdditionalAIPCost="5"
+                        AdditionalHapCost="10"
+                        AdditionalEssenceCost="20"
+                        BlueprintTransformCostInHacking="0"
+                        />
+
+        <record
+                        name="ClaimCyclopeanFlagship"
+                        is_partial_record="true"
+
+                        short_name="Claim Cyclopean Flagship"
+                        
+                        MinFlagshipLevel="0"
+
+                        AdditionalAIPCost="5"
+                        AdditionalHapCost="10"
+                        AdditionalEssenceCost="20"
+                        BlueprintTransformCostInHacking="0"
+                        />
+
+        <record
+                        name="ClaimDecadentFlagship"
+                        is_partial_record="true"
+
+                        short_name="Claim Decadent Flagship"
+                        
+                        MinFlagshipLevel="2"
+
+                        AdditionalAIPCost="15"
+                        AdditionalHapCost="30"
+                        AdditionalEssenceCost="40"
+                        BlueprintTransformCostInHacking="0"
+                        />
+
+        <record
+                        name="ClaimAccursedFlagship"
+                        is_partial_record="true"
+
+                        short_name="Claim Accursed Flagship"
+                        
+                        MinFlagshipLevel="2"
+
+                        AdditionalAIPCost="10"
+                        AdditionalHapCost="25"
+                        AdditionalEssenceCost="30"
+                        BlueprintTransformCostInHacking="0"
+                        />
+
+        <record
+                        name="ClaimEnviousFlagship"
+                        is_partial_record="true"
+
+                        short_name="Claim Envious Flagship"
+                        
+                        MinFlagshipLevel="2"
+
+                        AdditionalAIPCost="10"
+                        AdditionalHapCost="25"
+                        AdditionalEssenceCost="30"
+                        BlueprintTransformCostInHacking="0"
+                        />
+
+        <record
+                        name="ClaimBlasphemousFlagship"
+                        is_partial_record="true"
+
+                        short_name="Claim Blasphemous Flagship"
+                        
+                        MinFlagshipLevel="2"
+
+                        AdditionalAIPCost="10"
+                        AdditionalHapCost="25"
+                        AdditionalEssenceCost="30"
+                        BlueprintTransformCostInHacking="0"
+                        />
+
+        <record
+                        name="ClaimPlagueswarmFlagship"
+                        is_partial_record="true"
+
+                        short_name="Claim Plagueswarm Flagship"
+
+                        MinFlagshipLevel="3"
+
+                        AdditionalAIPCost="12"
+                        AdditionalHapCost="30"
+                        AdditionalEssenceCost="30"
+                        BlueprintTransformCostInHacking="0"
+                        />
+
+        <record
+                        name="ClaimDrakeFlagship"
+                        is_partial_record="true"
+
+                        short_name="Claim Drake Flagship"
+
+                        MinFlagshipLevel="3"
+
+                        AdditionalAIPCost="12"
+                        AdditionalHapCost="30"
+                        AdditionalEssenceCost="30"
+                        BlueprintTransformCostInHacking="0"
+                        />
+
+        <record
+                        name="ClaimTranscendentFlagship"
+                        is_partial_record="true"
+
+                        short_name="Claim Transcendent Flagship"
+                        
+                        MinFlagshipLevel="5"
+
+                        AdditionalAIPCost="15"
+                        AdditionalHapCost="30"
+                        AdditionalEssenceCost="40"
+                        BlueprintTransformCostInHacking="0"
+                        />
+
+</root>
