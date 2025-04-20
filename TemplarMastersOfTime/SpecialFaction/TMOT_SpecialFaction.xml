@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+
+  <faction name="Templar" is_partial_record="true"
+           base_info_source="TemplarMOTFactionBaseInfo"
+           deep_info_source="TemplarMOTFactionDeepInfo"
+           >
+  </faction>
+
+</root>

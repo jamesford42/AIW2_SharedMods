@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <entity name="TemplarCastle" is_partial_record="true"
+				description_appender_dll="TemplarMOT"
+				description_appender_type="TemplarMOT.TemplarMOTDescAppender"
+            >
+  </entity>
+    <entity name="TemplarHerald" is_partial_record="true"
+				description_appender_dll="TemplarMOT"
+				description_appender_type="TemplarMOT.TemplarMOTDescAppender"
+            >
+  </entity>
+    <entity name="TemplarProphet" is_partial_record="true"
+				description_appender_dll="TemplarMOT"
+				description_appender_type="TemplarMOT.TemplarMOTDescAppender"
+            >
+  </entity>
+    <entity name="TemplarHarbinger" is_partial_record="true"
+				description_appender_dll="TemplarMOT"
+				description_appender_type="TemplarMOT.TemplarMOTDescAppender"
+            >
+  </entity>
+
+    <entity name="RallyFlag" display_name="Rally Flag" display_name_for_sidebar="R Flag"
+	        thematic_groups="Templar" npc_ship_cap_type="Turrets"
+			tags="TemplarFlag"
+			draw_in_galaxy_view="true"
+			visuals="Assets/_DLC3/Templar/TemplarEncampment/TemplarEncampment.prefab" visuals_bundle="exp3_neinzul_abyss" gimbal_name="AstroTrainDepot"
+			icon_name="Ships4/TemplarHerald" gimbal_icon_size_multiplier="1.0"
+			y_offset_of_icon="30"
+			voice_group="Silent"
+			category="Ship"
+			size_scale="3"
+			visuals_scale_multiplier="4"
+			y_offset_of_ship_in_visual_space="-1"
+			collision_priority="300"
+			description="The templar build these to help organise their forces, each one of these make it easier for them to flip from Organising to Crusading"
+			behavior="Stationary"
+			starting_mark_level="Mark1"
+			cost_for_ai_to_purchase="500" mark_level_scale_style="Templar"
+			hull_points="50000" shield_points="0" speed="Immobile"
+            metal_cost="50000" energy_consumption="1500"
+            armor_mm="90" albedo="0.6" mass_tx="7"
+            ship_or_structure_explosion_sfx="ShipLostMassive_Explosion"
+            ship_or_structure_explosion_if_on_other_planet_sfx="ShipLargeLostOnOtherPlanet_Explosion"
+            ship_or_structure_explosion_sfx_happens_if_not_mine_and_on_other_planet="true"
+            do_not_target_if_being_hacked="true"
+			priority_as_ai_target="IrreplaceableMisc" priority_as_frd_target="MajorPlanetLevelObjective" priority_to_protect="Irreplaceable"
+            >
+        <data_extension name="DLC3"
+            necromancer_science_to_grant_on_death="5"/>
+        <system name="R1" display_name="Self Defence"
+            category="Weapon" firing_timing="OnlyInRange"
+            damage_per_shot="500" range="High1" shot_speed="Normal" rate_of_fire="Normal"
+            shots_per_salvo="1" fires_salvos_sequentially="false"
+            shot_type_data="FusionRocket"
+			>
+		<outgoing_damage_modifier based_on="Armor_mm" comparison_type="AtMost" compared_to="50" multiplier="2" />
+        </system>
+    </entity>
+
+	<entity name="CrusadingTemplarSquire" copy_from="TemplarSquire" display_name_for_sidebar="C Squire"
+			display_name="Crusading Squire"
+			icon_overlay="Overlays1/Corvette_Pike"
+          		tags="CTemplarStrikecraft"
+			description="This Templar was created due to an active crusade, and won't generate science or hap. A basic Templar strikecraft, the Squire excels at lobbing grenades from afar at small clusters of enemies, which are particularly deadly to small ships like skeletons."
+			>
+    <data_extension name="DLC3"
+          necromancer_science_to_grant_on_death="0"
+          necromancer_hacking_to_grant_on_death="0"
+          immune_to_necromancy="true"/>
+	</entity>
+
+	<entity name="CrusadingEliteTemplarSquire" copy_from="TemplarEliteSquire" display_name_for_sidebar="CE Squire"
+			display_name="Crusading Elite Squire"
+			icon_overlay="Overlays1/Corvette_Pike"
+          		tags="CTemplarEliteStrikecraft"
+			description="This Templar was created due to an active crusade, and won't generate science or hap. A basic Templar strikecraft, the Squire excels at lobbing grenades from afar at small clusters of enemies, which are particularly deadly to small ships like skeletons. These elite versions are specially adapted for combat against the Necromancer."
+			>
+    <data_extension name="DLC3"
+          necromancer_science_to_grant_on_death="0"
+          necromancer_hacking_to_grant_on_death="0"
+          immune_to_necromancy="true"/>
+	</entity>
+
+	<entity name="CrusadingTemplarPage" copy_from="TemplarPage" display_name_for_sidebar="C Page"
+			display_name="Crusading Page"
+			icon_overlay="Overlays1/Corvette_Pike"
+          		tags="CTemplarStrikecraft"
+			description="This Templar was created due to an active crusade, and won't generate science or hap. A swarmer Templar strikecraft with a hardened hull, the Page is exceptional against highly-armored ships, particularly if they are also massive."
+			>
+    <data_extension name="DLC3"
+          necromancer_science_to_grant_on_death="0"
+          necromancer_hacking_to_grant_on_death="0"
+          immune_to_necromancy="true"/>
+	</entity>
+
+	<entity name="CrusadingTemplarElitePage" copy_from="TemplarElitePage" display_name_for_sidebar="CE Page"
+			display_name="Crusading Elite Page"
+			icon_overlay="Overlays1/Corvette_Pike"
+          		tags="CTemplarEliteStrikecraft"
+			description="This Templar was created due to an active crusade, and won't generate science or hap. A swarmer Templar strikecraft with a hardened hull, the Page is exceptional against highly-armored ships, particularly if they are also massive. These elite versions are specially adapted for combat against the Necromancer."
+			>
+    <data_extension name="DLC3"
+          necromancer_science_to_grant_on_death="0"
+          necromancer_hacking_to_grant_on_death="0"
+          immune_to_necromancy="true"/>
+	</entity>
+
+	<entity name="CrusadingTemplarApprentice" copy_from="TemplarApprentice" display_name_for_sidebar="C Apprentice"
+			display_name="Crusading Apprentice"
+			icon_overlay="Overlays1/Corvette_Pike"
+          		tags="CTemplarStrikecraft"
+			description="This Templar was created due to an active crusade, and won't generate science or hap. A basic Templar strikecraft, the Apprentice is a cloaked melee fighter equipped with fusion saws to partly bypass shields."
+			>
+    <data_extension name="DLC3"
+          necromancer_science_to_grant_on_death="0"
+          necromancer_hacking_to_grant_on_death="0"
+          immune_to_necromancy="true"/>
+	</entity>
+
+	<entity name="CrusadingTemplarEliteApprentice" copy_from="TemplarEliteApprentice" display_name_for_sidebar="CE Apprentice"
+			display_name="Crusading Apprentice"
+			icon_overlay="Overlays1/Corvette_Pike"
+          		tags="CTemplarEliteStrikecraft"
+			description="This Templar was created due to an active crusade, and won't generate science or hap. A basic Templar strikecraft, the Apprentice is a cloaked melee fighter equipped with fusion saws to partly bypass shields. These elite versions are specially adapted for combat against the Necromancer."
+			>
+    <data_extension name="DLC3"
+          necromancer_science_to_grant_on_death="0"
+          necromancer_hacking_to_grant_on_death="0"
+          immune_to_necromancy="true"/>
+	</entity>
+
+	<entity name="CrusadingTemplarSergeant" copy_from="TemplarSergeant" display_name_for_sidebar="C Inquisitor"
+			display_name="Crusading Inquisitor"
+			icon_overlay="Overlays1/Corvette_Pike"
+          		tags="CTemplarGuardian"
+			description="This Templar was created due to an active crusade, and won't generate science or hap. A fragile but deadly Templar frigate, the Inquisitor is a cloaked bombardier that fires in bursts, cloaking before it fires another salvo. Its weapon specializes in taking out ships with powerful engines."
+			>
+    <data_extension name="DLC3"
+          necromancer_science_to_grant_on_death="0"
+          necromancer_hacking_to_grant_on_death="0"
+          immune_to_necromancy="true"/>
+	</entity>
+
+	<entity name="CrusadingTemplarEliteSergeant" copy_from="TemplarEliteSergeant" display_name_for_sidebar="CE Inquisitor"
+			display_name="Crusading Elite Inquisitor"
+			icon_overlay="Overlays1/Corvette_Pike"
+          		tags="CTemplarEliteGuardian"
+			description="This Templar was created due to an active crusade, and won't generate science or hap. A fragile but deadly Templar frigate, the Inquisitor is a cloaked bombardier that fires in bursts, cloaking before it fires another salvo. Its weapon specializes in taking out ships with powerful engines. These elite versions are specially adapted for combat against the Necromancer."
+			>
+    <data_extension name="DLC3"
+          necromancer_science_to_grant_on_death="0"
+          necromancer_hacking_to_grant_on_death="0"
+          immune_to_necromancy="true"/>
+	</entity>
+
+	<entity name="CrusadingTemplarExorcist" copy_from="TemplarExorcist" display_name_for_sidebar="C Exorcist"
+			display_name="Crusading Exorcist"
+			icon_overlay="Overlays1/Corvette_Pike"
+          		tags="CTemplarGuardian"
+			description="This Templar was created due to an active crusade, and won't generate science or hap. A strong Templar frigate, the Exorcist deals bursts of area damage around itself, excelling at killing ships with a high albedo, like cloaked ships. On death, releases one final blast."
+			>
+    <data_extension name="DLC3"
+          necromancer_science_to_grant_on_death="0"
+          necromancer_hacking_to_grant_on_death="0"
+          immune_to_necromancy="true"/>
+	</entity>
+
+	<entity name="CrusadingTemplarEliteExorcist" copy_from="TemplarEliteExorcist" display_name_for_sidebar="CE Exorcist"
+			display_name="Crusading Elite Exorcist"
+			icon_overlay="Overlays1/Corvette_Pike"
+          		tags="CTemplarEliteGuardian"
+			description="This Templar was created due to an active crusade, and won't generate science or hap. A strong Templar frigate, the Exorcist deals bursts of area damage around itself, excelling at killing ships with a high albedo, like cloaked ships. On death, releases one final blast. These elite versions are specially adapted for combat against the Necromancer."
+			>
+    <data_extension name="DLC3"
+          necromancer_science_to_grant_on_death="0"
+          necromancer_hacking_to_grant_on_death="0"
+          immune_to_necromancy="true"/>
+	</entity>
+
+	<entity name="CrusadingTemplarPaladin" copy_from="TemplarPaladin" display_name_for_sidebar="C Paladin"
+			display_name="Crusading Paladin"
+			icon_overlay="Overlays1/Corvette_Pike"
+          		tags="CTemplarGuardian"
+			description="This Templar was created due to an active crusade, and won't generate science or hap. A strong Templar frigate, the Paladin can purify enemies, giving them a second chance to serve a noble purpose as a Penitent Page. Harshly rebukes those beyond grace with radiant light."
+			>
+    <data_extension name="DLC3"
+          necromancer_science_to_grant_on_death="0"
+          necromancer_hacking_to_grant_on_death="0"
+          immune_to_necromancy="true"/>
+	</entity>
+
+	<entity name="CrusadingTemplarElitePaladin" copy_from="TemplarElitePaladin" display_name_for_sidebar="CE Paladin"
+			display_name="Crusading Elite Paladin"
+			icon_overlay="Overlays1/Corvette_Pike"
+          		tags="CTemplarGuardian"
+			description="This Templar was created due to an active crusade, and won't generate science or hap. A strong Templar frigate, the Paladin can purify enemies, giving them a second chance to serve a noble purpose as a Penitent Page. Harshly rebukes those beyond grace with radiant light. These elite versions are specially adapted for combat against the Necromancer."
+			>
+    <data_extension name="DLC3"
+          necromancer_science_to_grant_on_death="0"
+          necromancer_hacking_to_grant_on_death="0"
+          immune_to_necromancy="true"/>
+	</entity>
+
+	<entity name="CrusadingTemplarKnight" copy_from="TemplarKnight" display_name_for_sidebar="C Knight"
+			display_name="Crusading Knight"
+			icon_overlay="Overlays1/Corvette_Pike"
+          		tags="CTemplarGuardian"
+			description="This Templar was created due to an active crusade, and won't generate science or hap. A strong Templar frigate, the Knight charges at its enemies to strike at melee range. Recovers health as it deals damage, especially against armored foes."
+			>
+    <data_extension name="DLC3"
+          necromancer_science_to_grant_on_death="0"
+          necromancer_hacking_to_grant_on_death="0"
+          immune_to_necromancy="true"/>
+	</entity>
+
+	<entity name="CrusadingTemplarEliteKnight" copy_from="TemplarEliteKnight" display_name_for_sidebar="CE Knight"
+			display_name="Crusading Elite Knight"
+			icon_overlay="Overlays1/Corvette_Pike"
+          		tags="CTemplarEliteGuardian"
+			description="This Templar was created due to an active crusade, and won't generate science or hap. A strong Templar frigate, the Knight charges at its enemies to strike at melee range. Recovers health as it deals damage, especially against armored foes. These elite versions are specially adapted for combat against the Necromancer."
+			>
+    <data_extension name="DLC3"
+          necromancer_science_to_grant_on_death="0"
+          necromancer_hacking_to_grant_on_death="0"
+          immune_to_necromancy="true"/>
+	</entity>
+
+	<entity name="CrusadingTemplarSeneschal" copy_from="TemplarSeneschal" display_name_for_sidebar="C Seneschal"
+			display_name="Crusading Seneschal"
+			icon_overlay="Overlays1/Corvette_Pike"
+          		tags="CTemplarDire"
+			description="This Templar was created due to an active crusade, and won't generate science or hap. A devious Templar destroyer, the Seneschal is cloaked and has two paralyzing weapons specializing in singular large ships and groups of small ships, respectively."
+			>
+    <data_extension name="DLC3"
+          necromancer_science_to_grant_on_death="0"
+          necromancer_hacking_to_grant_on_death="0"
+          immune_to_necromancy="true"/>
+	</entity>
+
+	<entity name="CrusadingTemplarHospitaller" copy_from="TemplarHospitaller" display_name_for_sidebar="C Hospitaller"
+			display_name="Crusading Hospitaller"
+			icon_overlay="Overlays1/Corvette_Pike"
+          		tags="CTemplarDire"
+			description="This Templar was created due to an active crusade, and won't generate science or hap. A supportive Templar destroyer, the Hospitaller regenerates fallen allies at the expense of its own health but can regenerate outside of combat. Has a planetary ranged attack designed to destroy freshly arrived ships."
+			>
+    <data_extension name="DLC3"
+          necromancer_science_to_grant_on_death="0"
+          necromancer_hacking_to_grant_on_death="0"
+          immune_to_necromancy="true"/>
+	</entity>
+
+	<entity name="CrusadingTemplarGrandMaster" copy_from="TemplarGrandMaster" display_name_for_sidebar="CG Master"
+			display_name="Crusading Grand Master"
+			icon_overlay="Overlays1/Corvette_Pike"
+          		tags="CTemplarDire"
+			description="This Templar was created due to an active crusade, and won't generate science or hap. A powerful Templar destroyer, the Grand Master wrangles large craft with a reverse tractor beam to optimize its focused battlecannons for disgusting damage."
+			>
+    <data_extension name="DLC3"
+          necromancer_science_to_grant_on_death="0"
+          necromancer_hacking_to_grant_on_death="0"
+          immune_to_necromancy="true"/>
+	</entity>
+
+
+</root>

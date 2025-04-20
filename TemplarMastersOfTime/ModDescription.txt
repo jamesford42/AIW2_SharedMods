@@ -1,0 +1,3 @@
+Changes the gameplan of the templar to a less exploitable idea, these templar can build power on their own merit much more efficiently rather than forming a co-dependance on AIP, putting real pressure on necromancers and forcing them to advance the gamestate.
+
+These templar may be easier to hack, as they won't send as many wave leaders in that instance, but given enough time, they will go on crusades - amassing strength quickly in order to finish off Necromancers who they feel are weak and easy to finish off.

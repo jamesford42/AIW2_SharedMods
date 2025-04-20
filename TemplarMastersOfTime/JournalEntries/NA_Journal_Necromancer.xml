@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+    <!-- Masters of Time -->
+    <journal name="NA_TemplarMOT_Lore" sidebar_text="&lt;color=#a1ffa1&gt;Lore&lt;/color&gt;: {FactionColor}Masters Of Time&lt;/color&gt;"
+             can_record_another_copy_if_already_recorded_in_this_campaign="false"
+             text_replacement_related_faction_color="true"
+        full_text="In another galaxy, a Necromancer appeared near Templar high command, and in what should have been an one-sided fight, created the largest disaster in Templar History. The remaining Templar - humiliated by this loss - spent years examining the fight in excruciating detail and decided protocols needed to change.
+
+With a newly revised war strategy, The Templar unleashed a cross-galaxy onslaught, focusing on exterminating weak necromancers whilst only holding larger ones at bay. this timing focused strategy was so successful, they became known by the moniker 'Masters of Time', and the templar we fight here are an extension of that dangerous strategy
+
+(See Tips for more information)"  />
+
+<journal name="NA_MOT_Introduction" sidebar_text="{FactionColor}Masters Of Time&lt;/color&gt;:  Overview"
+           is_for_the_tips_tab="true"
+           can_record_another_copy_if_already_recorded_in_this_campaign="false"
+           text_replacement_related_faction_color="true"
+        chat_text="My Liege The Templar in this galaxy are Masters of Time, check tips for more information"
+        full_text="My Liege, the Templar here have adopted a new revised strategy,
+
+Unlike the AI, the Templar are using an extermination strategy, using 'Crusades' to focus on destroying weaker necromancers first, whilst only stalling the strong necromancers.
+
+In order to be considered one of the latter, it's advised to keep tabs on how they currently view us. We can view their opinions on us by checking in on either their Castles, or their waveleaders.
+
+Opinions and their meanings:
+
+Scrambling - The Templar view us as a major threat - whilst in this state, they will behave in much the same way as the past - where their strength will depend mostly on AIP and bases they contol
+
+Organising - The Templar are comfortable with your rate of expansion, viewing you a moderate threat - The templar will play in a slightly accelerated state, as if your AIP is a bit higher than it currently is, if left organising long enough, and if not further suppressed, they will begin a crusade.
+
+Crusading - The Templar view you as weak and as such, you have become a target of extermination - The templar will rapidly increase in strength, during this state, it's unlikely you will survive for long, so it's important to address this as soon as possible.
+
+Suppressing the Templar
+
+In order to prevent the templar from viewing you as a weak target for a crusade, its important to intimidate them by gaining AI Progress. Note that they are set back by AIP Reduction too, so destroying a data center will delay their expectations of your empire as well.
+
+Templar castles that have been constructed deep in templar territory may entrench themselves with flags, these make it easier for the templar to jump from organising -> crusading, but don't affect the scrambling state, so if we cannot hunt these deep castle flags, we can still gain more AIP and AIP reduction more aggressively instead.
+
+it's best to keep the Templar in a scrambling state, but organising is usually fine too. Crusades however, need to be addressed quickly, as even an hour in that state is likely to put and end to our empire."
+
+
+/>
+
+</root>
